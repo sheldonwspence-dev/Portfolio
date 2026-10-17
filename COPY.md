@@ -143,3 +143,119 @@ URL for this link (not visible text).
 ### also.senate.url
 URL for this link (not visible text).
 
+### tb.project.label
+title block label for the project name (shared by every card).
+
+### now.tb.project
+what the project is called in the title block.
+
+### tb.role.label
+title block label for your role (shared by every card).
+
+### now.tb.role
+your role on this project.
+
+### tb.year.label
+title block label for the year (shared by every card).
+
+### now.tb.year
+the year or years of the work.
+
+### tb.rev.label
+title block label for the revision (shared by every card).
+
+### now.tb.rev
+the revision or version, like v0 or rev 2.
+
+### lumen.tb.project
+what the project is called in the title block.
+
+### lumen.tb.role
+your role on this project.
+
+### lumen.tb.year
+the year or years of the work.
+
+### lumen.tb.rev
+the revision or version, like v0 or rev 2.
+
+### amerifab.tb.project
+what the project is called in the title block.
+
+### amerifab.tb.role
+your role on this project.
+
+### amerifab.tb.year
+the year or years of the work.
+
+### amerifab.tb.rev
+the revision or version, like v0 or rev 2.
+
+### patent.tb.project
+what the project is called in the title block.
+
+### patent.tb.role
+your role on this project.
+
+### patent.tb.year
+the year or years of the work.
+
+### patent.tb.rev
+the revision or version, like v0 or rev 2.
+
+### tedx.tb.project
+what the project is called in the title block.
+
+### tedx.tb.role
+your role on this project.
+
+### tedx.tb.year
+the year or years of the work.
+
+### tedx.tb.rev
+the revision or version, like v0 or rev 2.
+
+### club.tb.project
+what the project is called in the title block.
+
+### club.tb.role
+your role on this project.
+
+### club.tb.year
+the year or years of the work.
+
+### club.tb.rev
+the revision or version, like v0 or rev 2.
+
+### frc.tb.project
+what the project is called in the title block.
+
+### frc.tb.role
+your role on this project.
+
+### frc.tb.year
+the year or years of the work.
+
+### frc.tb.rev
+the revision or version, like v0 or rev 2.
+
+### also.th.item
+column header for the item number.
+
+### also.th.desc
+column header for the description.
+
+### also.th.link
+column header for the link.
+
+### also.congress.item
+item number for the Congress event.
+
+### also.senate.item
+item number for Senate.
+
+### also.senate.link
+link text for the Senate Instagram post.
+
+### also.ap.item
+item number for the AP Research paper.
