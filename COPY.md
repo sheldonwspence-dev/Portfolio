@@ -259,3 +259,18 @@ link text for the Senate Instagram post.
 
 ### also.ap.item
 item number for the AP Research paper.
+
+### header.line
+one line under the name that says who he is and what the page is.
+
+### now.detail.image
+the sketch or photo of the product, with alt text.
+
+### now.detail.note1
+what the first callout points at.
+
+### now.detail.note2
+what the second callout points at.
+
+### now.detail.note3
+what the third callout points at.
