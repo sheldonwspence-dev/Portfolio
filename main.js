@@ -103,3 +103,34 @@ document.querySelectorAll('.card .results').forEach(section => {
     }, { threshold: 0.3 }).observe(section);
   }
 });
+
+// Detail views: build each callout's leader line and target dot from its data attributes.
+// data-bubble is where the numbered bubble sits and data-target the point it marks, as "x,y" percent of the image.
+document.querySelectorAll('.detail-view').forEach(view => {
+  const leaders = document.createElementNS(SVG_NS, 'svg');
+  leaders.classList.add('detail-leaders');
+  leaders.setAttribute('viewBox', '0 0 100 100');
+  leaders.setAttribute('preserveAspectRatio', 'none');
+  leaders.setAttribute('aria-hidden', 'true');
+  view.querySelectorAll('.callout').forEach(callout => {
+    const [bx, by] = callout.dataset.bubble.split(',').map(Number);
+    const [tx, ty] = callout.dataset.target.split(',').map(Number);
+    callout.style.left = `${bx}%`;
+    callout.style.top = `${by}%`;
+    for (const name of ['halo', 'line']) {
+      const line = document.createElementNS(SVG_NS, 'line');
+      line.classList.add(name);
+      line.setAttribute('x1', bx);
+      line.setAttribute('y1', by);
+      line.setAttribute('x2', tx);
+      line.setAttribute('y2', ty);
+      leaders.append(line);
+    }
+    const dot = document.createElement('span');
+    dot.className = 'callout-dot';
+    dot.style.left = `${tx}%`;
+    dot.style.top = `${ty}%`;
+    view.append(dot);
+  });
+  view.prepend(leaders);
+});
