@@ -274,3 +274,24 @@ what the second callout points at.
 
 ### now.detail.note3
 what the third callout points at.
+
+### now.detail2.image
+alt text for the second sketch, the app wireframes.
+
+### now.detail2.note1
+what the first callout on the wireframes points at.
+
+### now.detail2.note2
+what the second callout on the wireframes points at.
+
+### now.detail2.note3
+what the third callout on the wireframes points at.
+
+### also.kelley.item
+item number for the Kelley case competition.
+
+### also.kelley
+one line on the Kelley case competition and Oolitic Goods.
+
+### also.kelley.alt
+alt text for the Oolitic Goods engraving drawing.
