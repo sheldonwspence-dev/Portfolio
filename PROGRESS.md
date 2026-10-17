@@ -46,3 +46,28 @@
 - The Lumen deck now sits in a frame with a plain ink border. Its iframe scaling is unchanged.
 
 **Look at in the diff.** The `main.js` cloud code is the only new logic. In `styles.css`, the `.frame::before` and `.view-ticks::before` rules draw the ticks with gradients.
+
+## M1.5: title sheet, drafting details, detail view (2026-10-17)
+
+**What changed.** `assets/incoming/` is now in `.gitignore` (done first, before any other commit), and nothing from it is in the repo. `DESIGN.md` now describes everything below, and I corrected the two lines it contradicted (the title block position and the left-aligned layout). On the page:
+- A title sheet sits at the top inside the frame: an `h1` reading "Sheldon Spence", exactly as you wrote it, with a ruled line under it, then one line of text from the new `header.line` slot. It has no red.
+- The content column is centered inside the page frame.
+- On desktop each title block is one row of four cells along the card's bottom edge. On a phone it is still the stacked strip.
+- Every sheet (cards and title sheet) has ink corner marks and a center mark just outside its border. Every card has a dimension line under its title, with arrowheads and end ticks and no text. Every card has a construction-blue grid in its empty areas. Content sits on solid sheet color, so the grid never runs under text.
+- The detail view is built. The image sits in a plain view frame with up to three numbered callout bubbles, leader lines and target dots. A numbered notes list sits beside it on desktop and below it on a phone. `main.js` draws the leaders from `data-bubble` and `data-target` attributes (percent positions). The numbers come from CSS counters. I put one example in the Now building card, with an empty image slot and three notes.
+
+**Commits.** Gitignore, then the approval of the four M1 decisions (I changed those four `DECISIONS.md` lines to "Claude proposed, Sheldon approved"), then `COPY.md` empty slots (its own commit, says so), then `DESIGN.md`, then the page changes, then the leader-line JS.
+
+**Decisions to review** (in `DECISIONS.md`):
+- Corner marks, center marks and dimension lines are ink, because blue ones would disappear against the blue grid. Only the grid and the frame and deck ticks are blue.
+- The example detail view lives in the Now building card. Move or delete it freely.
+- Callout and note numbers are CSS counters, not typed digits.
+
+**New `COPY.md` slots.** `header.line`, `now.detail.image`, `now.detail.note1`, `now.detail.note2`, `now.detail.note3`.
+
+**Things to know.**
+- I haven't seen any of this rendered. Please check the grid brightness (it is the full construction color, so tell me if it's too loud), the arrowheads on the dimension line, the corner marks near the frame edge on a phone, and the leader lines.
+- The grid and marks are drawn with plain CSS gradients. The bubble positions are guesses until a real image goes in.
+- The images are not placed. See the list posted in chat.
+
+**Look at in the diff.** `styles.css`: the `.card` grid background, `.card::before` marks, `.dimension`, and the `.detail` block. `main.js`: the last block.
