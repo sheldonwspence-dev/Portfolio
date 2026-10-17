@@ -71,3 +71,22 @@
 - The images are not placed. See the list posted in chat.
 
 **Look at in the diff.** `styles.css`: the `.card` grid background, `.card::before` marks, `.dimension`, and the `.detail` block. `main.js`: the last block.
+
+## M1.5 follow-up: images placed (2026-10-17)
+
+**What changed.** Both whiteboard photos are now detail views in Now building, each with three callouts and three note slots. The first, `assets/now-plan.jpg`, is the investor, influencer and fan plan. The second, `assets/now-wireframes.jpg`, is the app wireframes. I cropped the monitor out of the wireframes photo. I also cropped the table, wall rail and marker tray out of both. There is a new Also row for the Kelley case competition, with `assets/kelley-drawing.jpg` as a framed thumbnail under its description. The mock trial photo is not used. The `.textClipping` file was already gone from `assets/incoming/`.
+
+**Metadata.** I rotated each photo upright, converted it to sRGB, resized it to 1800px at most, then rewrote the JPEG keeping only the segments needed to decode it. That removes the EXIF block (location, camera model, timestamps, orientation), the color profile, and any comments. I checked the three published files: no EXIF, GPS or camera strings, and the live copies match. The originals are untouched in `assets/incoming/`, which is ignored by git and returns 404 on the live site. The tool I used is a short script I wrote in the scratchpad, not in the repo.
+
+**Which Kelley image I picked and why.** I picked `IMG_5847`, the Oolitic Goods engraving drawing. It is the only one of the two new images that is actually Oolitic Goods. `IMG_5917` is a whiteboard of notes from a homicide case, which looks like mock trial prep, not the Kelley project. The drawing also reads clearly at thumbnail size: a hand-drawn IU campus scene, dimension lines and five numbered callouts. I cropped to the top view, which leaves out your thumb over the side view, and the notes text. The crop drops the "Oolitic Goods" title block, so the name will come from your Also text.
+
+**Things to review.**
+- The Kelley drawing shows the IU logo twice, on the building and on the child's sweatshirt. The drawing's own note says logos are cleared for license before production. Check that showing it here is fine.
+- The photo is warm and dim, with a perspective tilt. I did not retouch it. I can brighten it if you'd like.
+- Callout positions are my guesses from reading the images. I aimed them at the legend, the $$$ tree and the growth list on the first sketch, and the app roles, the home page wireframe and the age rule on the second. Tell me if you want different targets. They are `data-target` values in `index.html`.
+- The two detail views stack. The first is tall because the whiteboard is portrait, so on desktop it will be a tall figure next to its notes.
+- I haven't seen the page rendered.
+
+**New `COPY.md` slots** (empty, committed as slots only): `now.detail2.image`, `now.detail2.note1` to `note3`, `also.kelley.item`, `also.kelley`, `also.kelley.alt`.
+
+**Decisions** (in `DECISIONS.md`): the Kelley image pick and the image-processing method are marked "Claude decided, Sheldon to review". Placing both whiteboards and leaving out the mock trial photo are yours.
