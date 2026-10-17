@@ -20,3 +20,4 @@ Format: `YYYY-MM-DD | decision | why | decided by`
 2026-10-17 | Scale the deck iframe with a few lines of JS (ResizeObserver) from a 1200x715 native size | CSS alone can't divide lengths reliably across browsers | Claude proposed, Sheldon approved
 2026-10-17 | Every link URL, alt text, iframe title and button label is a placeholder id in COPY.md | Rule 1 covers all visitor-facing strings, including ones read only by screen readers | Claude decided, Sheldon to review
 2026-10-17 | Claude commits the empty COPY.md template once, labeled as the template; every commit after that is Sheldon's | Rule 4 said Claude never commits COPY.md, and Sheldon made this one exception for the blank template | Sheldon
+2026-10-17 | Design direction is Redline (engineering drawing set marked up with a red pen), written up in DESIGN.md | Fits the builder-but-polished brief and stays distinct from Lumen's cream/amber | Sheldon chose from Claude's options
