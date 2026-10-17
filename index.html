@@ -10,11 +10,16 @@
 </head>
 <body>
   <div class="frame">
+  <header class="titlesheet">
+    <h1>Sheldon Spence</h1>
+    <p>[PLACEHOLDER header.line: one line under the name that says who he is and what the page is]</p>
+  </header>
   <main>
 
     <!-- 1. Now building -->
     <article class="card" id="now" aria-labelledby="now-title">
       <h2 id="now-title">Now building: [PLACEHOLDER now.name: the startup's name]</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
@@ -33,6 +38,20 @@
           <p>[PLACEHOLDER now.results: where things stand today]</p>
         </section>
       </div>
+      <!-- Detail view: swap .detail-image for an <img> when the sketch is placed. Up to three callouts; each note matches a bubble by order. -->
+      <figure class="detail">
+        <div class="detail-view">
+          <div class="detail-image">[PLACEHOLDER now.detail.image: the sketch or photo of the product, with alt text]</div>
+          <span class="callout" data-bubble="10,14" data-target="32,36"></span>
+          <span class="callout" data-bubble="90,20" data-target="66,44"></span>
+          <span class="callout" data-bubble="50,88" data-target="46,66"></span>
+        </div>
+        <ol class="detail-notes">
+          <li>[PLACEHOLDER now.detail.note1: what the first callout points at]</li>
+          <li>[PLACEHOLDER now.detail.note2: what the second callout points at]</li>
+          <li>[PLACEHOLDER now.detail.note3: what the third callout points at]</li>
+        </ol>
+      </figure>
       <p><a href="#" data-url="now.link.url">[PLACEHOLDER now.link.text: link text for the startup's landing page]</a></p>
       <dl class="titleblock">
         <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER now.tb.project: what the project is called in the title block]</dd></div>
@@ -45,6 +64,7 @@
     <!-- 2. Lumen -->
     <article class="card" id="lumen" aria-labelledby="lumen-title">
       <h2 id="lumen-title">Lumen</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
@@ -88,6 +108,7 @@
     <!-- 3. AmeriFab -->
     <article class="card" id="amerifab" aria-labelledby="amerifab-title">
       <h2 id="amerifab-title">AmeriFab</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
@@ -119,6 +140,7 @@
     <!-- 4. Patent (reserved; no status text until Sheldon confirms the wording) -->
     <article class="card" id="patent" aria-labelledby="patent-title">
       <h2 id="patent-title">Patent</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
@@ -148,6 +170,7 @@
     <!-- 5. TEDx -->
     <article class="card" id="tedx" aria-labelledby="tedx-title">
       <h2 id="tedx-title">TEDx</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
@@ -180,6 +203,7 @@
     <!-- 6. Policy & Civility Club -->
     <article class="card" id="club" aria-labelledby="club-title">
       <h2 id="club-title">Policy &amp; Civility Club</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
@@ -211,6 +235,7 @@
     <!-- 7. FRC 868 -->
     <article class="card" id="frc" aria-labelledby="frc-title">
       <h2 id="frc-title">FRC 868</h2>
+      <div class="dimension" aria-hidden="true"></div>
       <div class="views">
         <section>
           <h3>What I built</h3>
