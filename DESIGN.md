@@ -49,10 +49,10 @@ Define these as CSS custom properties on `:root`, redefined under `@media (prefe
 
 ## Layout
 
-- Left-aligned on a 12-column grid with generous margins. Mobile first; everything stacks cleanly on a phone.
+- The content column is centered inside the page frame (revised in M1.5; it was left-aligned) on a 12-column grid with generous margins. Mobile first; everything stacks cleanly on a phone.
 - **The page frame:** a thin ink border around the whole page, like a drawing's border. Along its edges, small construction-blue tick marks at even intervals. Ticks only, no letters or numbers.
 - **Each card is a drawing sheet:** a 1px ink border, square corners (0–2px radius), and no shadows. The four sections ("What I built", "The hard part", "What I learned", "Results") sit as views in a 2×2 grid on desktop and stack on mobile.
-- **Each card has a title block** in its bottom-right corner, like a real drawing: small ruled cells for project, role, year and revision. Every label and value in it is a placeholder for Sheldon. On mobile it becomes a full-width strip at the card's bottom.
+- **Each card has a title block** along its bottom edge, like a real drawing: small ruled cells for project, role, year and revision. Every label and value in it is a placeholder for Sheldon. On desktop it is one row of four cells spanning the card. On mobile it is a stacked strip (two rows of two) at the card's bottom.
 - **The "Also" strip is a parts list:** a compact ruled table (item number, description, link) instead of cards. Column headers are placeholders.
 - **The Lumen deck** sits inside a view frame with construction-blue corner ticks. The deck keeps its own cream and amber; the contrast is intentional.
 - Photos and slides sit in plain view frames. No decoration.
@@ -67,6 +67,26 @@ Define these as CSS custom properties on `:root`, redefined under `@media (prefe
 - One moment only: on first load, the revision clouds draw themselves in once (stroke-dashoffset), as if the engineer is marking up the drawing.
 - With `prefers-reduced-motion`, the clouds appear instantly.
 - No other animation: no fade-ins on scroll, and no hover effects beyond a clear link underline and visible keyboard focus.
+
+## M1.5 additions
+
+Added Oct 17, after the first look at Redline. Same rules apply: red only in the revision clouds, nothing cream or amber.
+
+### Page header: the title sheet
+
+- At the top inside the frame, styled as the drawing set's title sheet: an `h1` reading "Sheldon Spence" (Sheldon's words, used exactly) with a ruled line under it, then one line of text (placeholder `header.line`).
+- It is a sheet like the cards (ink border, square corners, corner and center marks) but has no grid. No red anywhere in it.
+
+### Drafting details on every sheet
+
+- **Corner marks and a center mark:** thin ink marks just outside each corner of every sheet, and a short mark across the middle of each edge, like registration marks on a drawing. They sit outside the border so the title block never covers them.
+- **Dimension line:** under each card title, a thin ink line with arrowheads and end ticks. No text on it.
+- **Grid:** a clearly visible construction-blue grid, like notebook paper, shows through in each card's empty areas (the margins and the gaps between views). Content (text, views, title block, embeds) sits on solid sheet color so the grid never runs under text. Construction blue only, never red.
+- The title sheet, the page frame ticks and the deck's corner ticks stay as before.
+
+### Detail view (reusable component)
+
+For photos and sketches. The image sits in a plain view frame. Up to three numbered callout bubbles sit on the image, each with a leader line and a small dot marking the point it describes. A short numbered notes list sits beside the image on desktop and below it on a phone. Notes are placeholders. The numbers are drawn by CSS counters, not typed, so the bubbles and the list can't drift apart. Bubbles and leaders are ink with a thin halo in the sheet color so they read on both light and dark photos.
 
 ## Avoid
 
