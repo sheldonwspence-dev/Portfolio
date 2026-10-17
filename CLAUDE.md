@@ -24,7 +24,7 @@ Sheldon wants you to work through milestones without him watching.
 3. **Log decisions as they happen.** When a real choice is made, append one line to `DECISIONS.md`:
    `YYYY-MM-DD | decision | why | decided by`
    "Decided by" is one of: Sheldon / Claude proposed, Sheldon approved / Sheldon chose from Claude's options / Claude decided, Sheldon to review. Never backfill or embellish. This file becomes his build log.
-4. **Honest history.** Small commits with plain messages. Don't remove or rewrite any AI attribution on commits. Never commit `COPY.md` yourself; those commits are Sheldon's.
+4. **Honest history.** Small commits with plain messages. Don't remove or rewrite any AI attribution on commits. Claude may commit `COPY.md` only to add empty slots, with a commit message saying so. Never edit or commit Sheldon's text; commits with his text are his.
 5. **Code Sheldon can defend.** Vanilla HTML/CSS/JS, no framework, no build step: `index.html`, `styles.css`, `main.js`, `deck/`, `assets/`. Comment only where the why isn't obvious.
 6. **No visual identity yet.** The look comes from a separate design round. Until Sheldon brings that back, style for structure only: system font stack, greys, spacing, responsive layout. Don't choose fonts, colors, or a style. When the direction arrives, it will be deliberately different from the deck and Lumen: no cream/amber palette, no Georgia.
 7. **No trackers.** No third-party scripts. The one exception is the YouTube embed: use `youtube-nocookie.com` and load the player only when clicked.
