@@ -181,6 +181,8 @@
   /* ---- NAV ---- */
   .nav { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; background: rgba(40,40,40,0.7); padding: 8px 14px; border-radius: 999px; backdrop-filter: blur(10px); z-index: 100; opacity: 0.4; transition: opacity 0.2s ease; }
   .nav:hover { opacity: 1; }
+  /* Touch screens can't hover, so keep the nav fully visible there. */
+  @media (hover: none) { .nav { opacity: 1; } }
   .nav-btn { background: transparent; border: none; color: #FDFBF5; font-size: 18px; cursor: pointer; padding: 4px 10px; line-height: 1; }
   .nav-btn:hover { color: #FAC775; }
   .nav-counter { color: #FDFBF5; font-size: 12px; font-family: 'Inter', sans-serif; min-width: 50px; text-align: center; letter-spacing: 0.5px; }
