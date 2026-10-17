@@ -9,53 +9,66 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="frame">
   <main>
 
     <!-- 1. Now building -->
     <article class="card" id="now" aria-labelledby="now-title">
       <h2 id="now-title">Now building: [PLACEHOLDER now.name: the startup's name]</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER now.built: what the startup is and what v0 does]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER now.hard: the hardest problem so far]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER now.learned: what building it taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER now.results: where things stand today]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER now.built: what the startup is and what v0 does]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER now.hard: the hardest problem so far]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER now.learned: what building it taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER now.results: where things stand today]</p>
+        </section>
+      </div>
       <p><a href="#" data-url="now.link.url">[PLACEHOLDER now.link.text: link text for the startup's landing page]</a></p>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER now.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER now.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER now.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER now.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 2. Lumen -->
     <article class="card" id="lumen" aria-labelledby="lumen-title">
       <h2 id="lumen-title">Lumen</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER lumen.built: what Lumen is and what it does]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER lumen.hard: the hardest problem]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER lumen.learned: what building it taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER lumen.results: what came of it]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER lumen.built: what Lumen is and what it does]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER lumen.hard: the hardest problem]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER lumen.learned: what building it taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER lumen.results: what came of it]</p>
+        </section>
+      </div>
       <figure class="deck">
+        <div class="view-ticks">
         <div class="deck-frame" id="deck-frame">
           <iframe id="deck-iframe" src="deck/index.html" width="1200" height="715" loading="lazy"
                   title="[PLACEHOLDER lumen.deck.title: short description of the embedded deck for screen readers]"></iframe>
+        </div>
         </div>
         <div class="deck-controls">
           <button type="button" id="deck-prev" aria-label="[PLACEHOLDER lumen.deck.prev: accessible name for the previous-slide button]">&lsaquo;</button>
@@ -64,133 +77,201 @@
         <figcaption>Concept pitch, DECA ICDC 2026</figcaption>
       </figure>
       <p><a href="#" data-url="lumen.link.url">[PLACEHOLDER lumen.link.text: link text for the live tool]</a></p>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER lumen.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER lumen.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER lumen.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER lumen.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 3. AmeriFab -->
     <article class="card" id="amerifab" aria-labelledby="amerifab-title">
       <h2 id="amerifab-title">AmeriFab</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER amerifab.built: what the production AI system does]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER amerifab.hard: the hardest problem]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER amerifab.learned: what building it taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER amerifab.results: what it has done in production]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER amerifab.built: what the production AI system does]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER amerifab.hard: the hardest problem]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER amerifab.learned: what building it taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER amerifab.results: what it has done in production]</p>
+        </section>
+      </div>
       <!-- Slot for the inline SVG system diagram (M2, after AmeriFab approves a public diagram). Every label is Sheldon's. -->
       <div class="slot" id="amerifab-diagram">[PLACEHOLDER amerifab.diagram.alt: alt text describing the system diagram]</div>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER amerifab.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER amerifab.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER amerifab.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER amerifab.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 4. Patent (reserved; no status text until Sheldon confirms the wording) -->
     <article class="card" id="patent" aria-labelledby="patent-title">
       <h2 id="patent-title">Patent</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER patent.built: what the invention is]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER patent.hard: the hardest problem]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER patent.learned: what the process taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER patent.results: current status, worded as Sheldon confirms with the attorney]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER patent.built: what the invention is]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER patent.hard: the hardest problem]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER patent.learned: what the process taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER patent.results: current status, worded as Sheldon confirms with the attorney]</p>
+        </section>
+      </div>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER patent.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER patent.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER patent.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER patent.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 5. TEDx -->
     <article class="card" id="tedx" aria-labelledby="tedx-title">
       <h2 id="tedx-title">TEDx</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER tedx.built: what the talk was and what you made for it]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER tedx.hard: the hardest part of giving the talk]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER tedx.learned: what the talk taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER tedx.results: what came of it]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER tedx.built: what the talk was and what you made for it]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER tedx.hard: the hardest part of giving the talk]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER tedx.learned: what the talk taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER tedx.results: what came of it]</p>
+        </section>
+      </div>
       <!-- Slots for the click-to-load YouTube embed (youtube-nocookie.com) and the PDF slide viewer (M2). -->
       <div class="slot" id="tedx-video">[PLACEHOLDER tedx.video.title: description of the talk video for screen readers]</div>
       <div class="slot" id="tedx-slides">[PLACEHOLDER tedx.slides.alt: description of the slides for screen readers]</div>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER tedx.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER tedx.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER tedx.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER tedx.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 6. Policy & Civility Club -->
     <article class="card" id="club" aria-labelledby="club-title">
       <h2 id="club-title">Policy &amp; Civility Club</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER club.built: what the club is and why you founded it]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER club.hard: the hardest problem]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER club.learned: what founding it taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER club.results: what the club has done]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER club.built: what the club is and why you founded it]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER club.hard: the hardest problem]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER club.learned: what founding it taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER club.results: what the club has done]</p>
+        </section>
+      </div>
       <!-- Slot for the PDF slide viewer (M2). -->
       <div class="slot" id="club-slides">[PLACEHOLDER club.slides.alt: description of the slides for screen readers]</div>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER club.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER club.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER club.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER club.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 7. FRC 868 -->
     <article class="card" id="frc" aria-labelledby="frc-title">
       <h2 id="frc-title">FRC 868</h2>
-      <section>
-        <h3>What I built</h3>
-        <p>[PLACEHOLDER frc.built: your role on the team and what you built]</p>
-      </section>
-      <section>
-        <h3>The hard part</h3>
-        <p>[PLACEHOLDER frc.hard: the hardest problem]</p>
-      </section>
-      <section>
-        <h3>What I learned</h3>
-        <p>[PLACEHOLDER frc.learned: what the team taught you]</p>
-      </section>
-      <section>
-        <h3>Results</h3>
-        <p>[PLACEHOLDER frc.results: how the team and your work did]</p>
-      </section>
+      <div class="views">
+        <section>
+          <h3>What I built</h3>
+          <p>[PLACEHOLDER frc.built: your role on the team and what you built]</p>
+        </section>
+        <section>
+          <h3>The hard part</h3>
+          <p>[PLACEHOLDER frc.hard: the hardest problem]</p>
+        </section>
+        <section>
+          <h3>What I learned</h3>
+          <p>[PLACEHOLDER frc.learned: what the team taught you]</p>
+        </section>
+        <section class="results">
+          <h3>Results</h3>
+          <p>[PLACEHOLDER frc.results: how the team and your work did]</p>
+        </section>
+      </div>
       <!-- Slot for the team photo (M2). -->
       <div class="slot" id="frc-photo">[PLACEHOLDER frc.photo.alt: alt text describing the team photo]</div>
+      <dl class="titleblock">
+        <div><dt>[PLACEHOLDER tb.project.label: title block label for the project name (shared by every card)]</dt><dd>[PLACEHOLDER frc.tb.project: what the project is called in the title block]</dd></div>
+        <div><dt>[PLACEHOLDER tb.role.label: title block label for your role (shared by every card)]</dt><dd>[PLACEHOLDER frc.tb.role: your role on this project]</dd></div>
+        <div><dt>[PLACEHOLDER tb.year.label: title block label for the year (shared by every card)]</dt><dd>[PLACEHOLDER frc.tb.year: the year or years of the work]</dd></div>
+        <div><dt>[PLACEHOLDER tb.rev.label: title block label for the revision (shared by every card)]</dt><dd>[PLACEHOLDER frc.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
+      </dl>
     </article>
 
     <!-- 8. Also: compact strip, not a full card -->
     <aside class="also" id="also" aria-labelledby="also-title">
       <h2 id="also-title">Also</h2>
-      <ul>
-        <li>[PLACEHOLDER also.congress: one line on the Congress event]</li>
-        <li><a href="#" data-url="also.senate.url">[PLACEHOLDER also.senate: one line on Senate, linked to the Instagram post]</a></li>
-        <li>[PLACEHOLDER also.ap: one line on the AP Research paper]</li>
-      </ul>
+      <table class="parts">
+        <thead>
+          <tr>
+            <th scope="col">[PLACEHOLDER also.th.item: column header for the item number]</th>
+            <th scope="col">[PLACEHOLDER also.th.desc: column header for the description]</th>
+            <th scope="col">[PLACEHOLDER also.th.link: column header for the link]</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>[PLACEHOLDER also.congress.item: item number for the Congress event]</td>
+            <td>[PLACEHOLDER also.congress: one line on the Congress event]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>[PLACEHOLDER also.senate.item: item number for Senate]</td>
+            <td>[PLACEHOLDER also.senate: one line on Senate, linked to the Instagram post]</td>
+            <td><a href="#" data-url="also.senate.url">[PLACEHOLDER also.senate.link: link text for the Senate Instagram post]</a></td>
+          </tr>
+          <tr>
+            <td>[PLACEHOLDER also.ap.item: item number for the AP Research paper]</td>
+            <td>[PLACEHOLDER also.ap: one line on the AP Research paper]</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </aside>
 
   </main>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>

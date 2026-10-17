@@ -1,21 +1,63 @@
-/* Structure only: system fonts, greys, spacing. The visual identity comes from the design round (M1). */
+/* Redline: an engineering drawing set, marked up in red pen. See DESIGN.md. */
+@font-face {
+  font-family: "Barlow";
+  src: url("assets/fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("assets/fonts/Barlow-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("assets/fonts/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("assets/fonts/BarlowSemiCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
-  --bg: #f5f5f5;
-  --surface: #ffffff;
-  --text: #1f1f1f;
-  --muted: #5c5c5c;
-  --line: #d4d4d4;
-  --slot: #ebebeb;
+  --vellum: #eef1ef;
+  --sheet: #f7f8f7;
+  --ink: #181c20;
+  --ink-muted: #4a535b;
+  --construction: #8fa9b8;
+  --redline: #e2312b;
+  --redline-text: #c8251f;
+
+  --font-head: "Barlow Semi Condensed", system-ui, sans-serif;
+  --font-body: "Barlow", system-ui, sans-serif;
+
+  /* Type scale: ratio 1.25 from a 16px body */
+  --step--1: 0.8rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.5625rem;
+  --step-3: 1.953rem;
+  --step-4: 2.441rem;
+
+  --pad: 1.25rem;
+  --tick-len: 8px;
+  --tick-gap: 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #161616;
-    --surface: #202020;
-    --text: #ececec;
-    --muted: #a3a3a3;
-    --line: #3a3a3a;
-    --slot: #2a2a2a;
+    --vellum: #15191c;
+    --sheet: #1c2125;
+    --ink: #e6eaec;
+    --ink-muted: #9aa6ae;
+    --construction: #4e6a7a;
+    --redline: #ff4a3d;
+    --redline-text: #ff6b5f;
   }
 }
 
@@ -23,53 +65,149 @@
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.5;
+  background: var(--vellum);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+h2, h3, th { font-family: var(--font-head); }
+p { margin: 0; max-width: 65ch; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* The page frame: a thin ink border with construction-blue ticks along its inside edges */
+.frame {
+  position: relative;
+  margin: 0.75rem;
+  border: 1px solid var(--ink);
+  padding: 2rem clamp(1rem, 5vw, 4rem) 3rem;
+}
+.frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 calc(var(--tick-gap) - 1px), var(--construction) calc(var(--tick-gap) - 1px) var(--tick-gap)) left top / 100% var(--tick-len) no-repeat,
+    repeating-linear-gradient(90deg, transparent 0 calc(var(--tick-gap) - 1px), var(--construction) calc(var(--tick-gap) - 1px) var(--tick-gap)) left bottom / 100% var(--tick-len) no-repeat,
+    repeating-linear-gradient(180deg, transparent 0 calc(var(--tick-gap) - 1px), var(--construction) calc(var(--tick-gap) - 1px) var(--tick-gap)) left top / var(--tick-len) 100% no-repeat,
+    repeating-linear-gradient(180deg, transparent 0 calc(var(--tick-gap) - 1px), var(--construction) calc(var(--tick-gap) - 1px) var(--tick-gap)) right top / var(--tick-len) 100% no-repeat;
 }
 
 main {
-  max-width: 44rem;
-  margin: 0 auto;
-  padding: 1rem;
+  max-width: 62rem;
   display: grid;
-  gap: 1rem;
+  gap: clamp(2.5rem, 6vw, 4rem);
 }
 
-.card, .also {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 0.5rem;
-  padding: 1rem;
+/* Each card is a drawing sheet */
+.card {
+  background: var(--sheet);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  padding: var(--pad);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-h2 { margin: 0 0 1rem; font-size: 1.5rem; line-height: 1.2; }
-h3 { margin: 1rem 0 0.25rem; font-size: 1rem; }
-p { margin: 0; }
-a { color: inherit; }
-:focus-visible { outline: 3px solid currentColor; outline-offset: 2px; }
+h2 {
+  margin: 0;
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.15;
+}
+@media (min-width: 48rem) {
+  h2 { font-size: var(--step-3); }
+}
 
-/* Reserved spaces for assets that arrive in M2 */
+/* The four sections are views on the sheet: 2x2 on desktop, stacked on a phone */
+.views { display: grid; gap: 2rem; }
+@media (min-width: 48rem) {
+  .views { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+}
+.views section {
+  position: relative;
+  padding: 0.75rem;
+  border-top: 1px solid var(--ink);
+}
+h3 {
+  margin: 0 0 0.25rem;
+  font-size: var(--step-1);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* The revision cloud is drawn by main.js */
+.cloud {
+  position: absolute;
+  pointer-events: none;
+  overflow: visible;
+}
+.cloud path {
+  fill: none;
+  stroke: var(--redline);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Title block in the card's bottom-right corner; a full-width strip on a phone */
+.titleblock {
+  margin: 0 calc(-1 * var(--pad)) calc(-1 * var(--pad));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.titleblock > div { padding: 0.5rem 0.75rem; }
+.titleblock > div:nth-child(odd) { border-right: 1px solid var(--ink); }
+.titleblock > div:nth-child(-n + 2) { border-bottom: 1px solid var(--ink); }
+.titleblock dt { font-size: var(--step--1); line-height: 1.3; color: var(--ink-muted); }
+.titleblock dd { margin: 0; font-weight: 500; }
+@media (min-width: 48rem) {
+  .titleblock {
+    width: 26rem;
+    margin-left: auto;
+    border-left: 1px solid var(--ink);
+  }
+}
+
+/* Reserved spaces for photos, slides and the diagram: plain view frames */
 .slot {
-  margin-top: 1rem;
   padding: 1rem;
-  background: var(--slot);
-  border: 1px dashed var(--line);
-  border-radius: 0.25rem;
-  color: var(--muted);
   min-height: 8rem;
+  border: 1px solid var(--ink);
+  color: var(--ink-muted);
 }
 
 /* Deck: the iframe renders at the deck's native size, then main.js scales it to the card width. */
-.deck { margin: 1rem 0 0; }
+.deck { margin: 0; }
+.view-ticks { position: relative; }
+.view-ticks::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--construction), var(--construction)) left top / 14px 1px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) left top / 1px 14px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) right top / 14px 1px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) right top / 1px 14px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) left bottom / 14px 1px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) left bottom / 1px 14px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) right bottom / 14px 1px no-repeat,
+    linear-gradient(var(--construction), var(--construction)) right bottom / 1px 14px no-repeat;
+}
 .deck-frame {
   position: relative;
   width: 100%;
   aspect-ratio: 1200 / 715;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 0.25rem;
+  border: 1px solid var(--ink);
 }
 .deck-frame iframe {
   position: absolute;
@@ -78,19 +216,36 @@ a { color: inherit; }
   border: 0;
   transform-origin: top left;
 }
-.deck-controls { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.deck-controls { display: flex; gap: 0.5rem; margin-top: 1rem; }
 .deck-controls button {
   min-width: 3rem;
   min-height: 3rem;
-  font-size: 1.5rem;
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--line);
-  border-radius: 0.25rem;
+  font: inherit;
+  font-size: var(--step-2);
+  background: var(--sheet);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 0;
   cursor: pointer;
 }
-figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.875rem; }
+figcaption { margin-top: 0.5rem; color: var(--ink-muted); font-size: var(--step--1); }
 
-.also ul { margin: 0; padding-left: 1.25rem; }
-.also li + li { margin-top: 0.25rem; }
-.also h2 { margin-bottom: 0.5rem; font-size: 1.125rem; }
+/* The Also strip is a parts list: a ruled table, not a card */
+.also h2 { margin-bottom: 0.75rem; font-size: var(--step-1); }
+.parts {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--ink);
+  background: var(--sheet);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.parts th, .parts td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--construction);
+}
+.parts thead th { border-bottom: 1px solid var(--ink); font-weight: 600; }
+.parts tbody tr:last-child td { border-bottom: 0; }
+.parts td:first-child, .parts th:first-child { width: 5rem; }
