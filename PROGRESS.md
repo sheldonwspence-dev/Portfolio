@@ -120,3 +120,13 @@
 - I haven't seen the page rendered; no browser is installed here. Check that the index doesn't touch the cards at around 1408px wide, that the offset outline isn't clipped on phones, and that the faint grid is faint enough in both color modes.
 - The card 1 entry in the index shows the placeholder title for now, clamped to two lines.
 - Existing bug I did not touch: in `styles.css`, the comment above `.titleblock` has leftover text after its closing `*/` ("'s bottom-right corner; a full-width strip on a phone */"). That likely makes the browser drop the whole `.titleblock` rule, so the title blocks may be unstyled. It is a one-line fix if you want it.
+
+## Titleblock comment fix and M1.6 approvals (2026-10-19)
+
+**What changed.** In `styles.css`, the comment above `.titleblock` had leftover text after its closing `*/`, which most likely made the browser drop the whole rule. I deleted the leftover text, so the comment is now one clean line and the rule can apply. Nothing else in the file changed. Title blocks should now show as ruled cells: two rows of two on a phone, one row of four on desktop.
+
+**Decisions.** You approved the four M1.6 numbers (6px offset, 16% grid strength, 88rem breakpoint, fixed index). I changed those three `DECISIONS.md` lines from "to review" to "approved" and added a line for this fix.
+
+**Look at in the diff.** The one comment line above `.titleblock` in `styles.css`.
+
+**Things to know.** I haven't seen the page rendered. Since the title blocks may have been unstyled until now, check how they look in both color modes and on a phone.

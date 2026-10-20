@@ -299,7 +299,7 @@ h3 {
   background: var(--sheet);
 }
 
-/* Title block along the card's bottom edge; a stacked strip on a phone */'s bottom-right corner; a full-width strip on a phone */
+/* Title block along the card's bottom edge; a stacked strip on a phone */
 .titleblock {
   margin: 0 calc(-1 * var(--pad)) calc(-1 * var(--pad));
   display: grid;
