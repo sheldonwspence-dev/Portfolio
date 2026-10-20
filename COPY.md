@@ -28,16 +28,16 @@ link text for the startup's landing page.
 
 ### lumen.built
 what Lumen is and what it does.
-
+Lumen is a service helping nonprofits learn how to properly use AI. The specific application transforms what you want into a good prompt. A good prompt gives context, clarity, a role for the AI, and more context (yes, lots of context).
 ### lumen.hard
 the hardest problem.
-
+The hardest part was making a product good enough to be pitched: technically viable in market, but also clean enough to look marketable. A delicate balance.
 ### lumen.learned
 what building it taught you.
-
+A good story is the most effective way to both tease out truth and have someone believe in your idea.
 ### lumen.results
 what came of it.
-
+Against the best sellers in the world, I didn't qualify to even get a test medal (the test is basically a list of buzzwords), but I did get second. I got 5th at state and placed 3 spots higher when the competition became international.
 ### lumen.deck.title
 short description of the embedded deck for screen readers.
 
@@ -262,7 +262,7 @@ item number for the AP Research paper.
 
 ### header.line
 one line under the name that says who he is and what the page is.
-
+Constantly curious about consciousness.
 ### now.detail.image
 the sketch or photo of the product, with alt text.
 
