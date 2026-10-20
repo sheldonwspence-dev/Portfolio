@@ -90,3 +90,16 @@
 **New `COPY.md` slots** (empty, committed as slots only): `now.detail2.image`, `now.detail2.note1` to `note3`, `also.kelley.item`, `also.kelley`, `also.kelley.alt`.
 
 **Decisions** (in `DECISIONS.md`): the Kelley image pick and the image-processing method are marked "Claude decided, Sheldon to review". Placing both whiteboards and leaving out the mock trial photo are yours.
+
+## Kelley image swapped (2026-10-19)
+
+**What changed.** The Kelley Also row now shows the clean digital Oolitic Goods sheet instead of the IMG_5847 phone photo. It is the whole sheet: title block, notes, side view, and the IU logo on the building and the sweatshirt. I trimmed the dark screenshot edge off the top, left and bottom; nothing from the drawing is cut. Files: `assets/kelley-drawing.jpg` (same filename, new image), `index.html` (the `<img>` width and height are now 1386 by 1066), `DECISIONS.md`.
+
+**Metadata.** I converted the PNG to sRGB, saved it as a JPEG, then dropped every EXIF, ICC and comment segment. A search of the published file finds no EXIF, GPS, ICC or Apple strings. The original sits in `assets/incoming/oolitic-goods-sheet.png`, which git ignores. It had landed in `assets/` untracked, so I moved it there to keep it from being published.
+
+**Decisions.** I marked six M1 and M1.5 lines "Claude decided, Sheldon approved": the deck nav on touch, link and alt text placeholders, ink-colored marks, the example detail view, CSS counters for callouts, and image processing. The old Kelley pick (IMG_5847) is the one line still saying "to review", because you replaced it. A new 2026-10-19 line records the swap as yours.
+
+**Things to know.**
+- The sheet itself has a small flaw: "Indiana limestone" runs over the bottom frame line, and the title block overlaps the frame's bottom border. That is in your drawing, so I left it.
+- I haven't seen the page rendered. The new image is wider than tall where the old one was nearly square, so check the thumbnail's framing in the Also row.
+- The alt text is still the placeholder `also.kelley.alt`; it describes the old drawing's wording, so check it fits the full sheet when you write it.
