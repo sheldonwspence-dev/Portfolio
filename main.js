@@ -134,3 +134,14 @@ document.querySelectorAll('.detail-view').forEach(view => {
   });
   view.prepend(leaders);
 });
+
+// Sheet index: one link per card, using each card's own title. CSS numbers the list and hides it on phones.
+const sheetList = document.querySelector('.sheet-index ol');
+document.querySelectorAll('main .card').forEach((card) => {
+  const link = document.createElement('a');
+  link.href = `#${card.id}`;
+  link.textContent = card.querySelector('h2').textContent;
+  const item = document.createElement('li');
+  item.append(link);
+  sheetList.append(item);
+});

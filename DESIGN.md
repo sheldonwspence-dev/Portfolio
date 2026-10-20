@@ -88,6 +88,16 @@ Added Oct 17, after the first look at Redline. Same rules apply: red only in the
 
 For photos and sketches. The image sits in a plain view frame. Up to three numbered callout bubbles sit on the image, each with a leader line and a small dot marking the point it describes. A short numbered notes list sits beside the image on desktop and below it on a phone. Notes are placeholders. The numbers are drawn by CSS counters, not typed, so the bubbles and the list can't drift apart. Bubbles and leaders are ink with a thin halo in the sheet color so they read on both light and dark photos.
 
+## M1.6 additions
+
+Added Oct 19, after seeing the page rendered. Same rules apply: red only in the revision clouds, no shadows.
+
+- **Sheet index:** on wide screens (88rem and up), a list of the cards stays fixed down the left margin, numbered 01, 02 and so on like a drawing set's sheet index, each entry using the card's title as it already appears. Clicking one jumps to that card. The numbers come from a CSS counter and the titles are copied from the card headings by `main.js`, so the list can't drift from the page. Hidden on phones and narrower screens. The "Also" strip isn't a card, so it isn't listed.
+- **Stacked sheets:** every card has a second 1px ink outline offset 6px down and to the right, behind it, like a stack of drawings. A line only, no shadow.
+- **Drafting-table grid:** a very faint construction-blue grid (the same 24px cell as the card grid, at 16% strength) runs across the whole page background. The cards keep their own, more visible grid.
+- **Tighter header:** the title sheet keeps its content but its vertical padding and the space around the rule under the name are roughly halved.
+- **Less dead space:** the gaps between cards and the padding inside cards are cut by about a third (card padding 1.25rem to 0.85rem, gap between cards 2.5-4rem to 1.65-2.65rem, and the gaps inside cards and between views to match).
+
 ## Avoid
 
 - Rounded cards with soft shadows, gradients, or glow.

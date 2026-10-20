@@ -45,7 +45,7 @@
   --step-4: 2.441rem;
   --step-5: 3.052rem;
 
-  --pad: 1.25rem;
+  --pad: 0.85rem;
   --tick-len: 8px;
   --tick-gap: 24px;
   --grid-cell: 24px;
@@ -68,7 +68,12 @@
 
 body {
   margin: 0;
-  background: var(--vellum);
+  background-color: var(--vellum);
+  /* a very faint drafting-table grid across the whole page */
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--construction) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--construction) 16%, transparent) 1px, transparent 1px);
+  background-size: var(--grid-cell) var(--grid-cell);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--step-0);
@@ -88,7 +93,7 @@ a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
   border: 1px solid var(--ink);
   padding: 2.5rem clamp(1.5rem, 5vw, 4rem) 3rem;
   display: grid;
-  gap: clamp(2.5rem, 6vw, 4rem);
+  gap: clamp(1.65rem, 4vw, 2.65rem);
 }
 .frame > * { width: 100%; max-width: 62rem; justify-self: center; }
 .frame::before {
@@ -105,7 +110,7 @@ a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
 
 main {
   display: grid;
-  gap: clamp(2.5rem, 6vw, 4rem);
+  gap: clamp(1.65rem, 4vw, 2.65rem);
 }
 
 /* Each card is a drawing sheet */
@@ -122,7 +127,63 @@ main {
   padding: var(--pad);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+/* A second outline offset behind each card, like a stack of drawings. No shadow: just a line. */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(6px, 6px);
+  border: 1px solid var(--ink);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Sheet index: a list of the cards that stays put down the left margin, wide screens only. main.js fills it. */
+.sheet-index { display: none; }
+@media (min-width: 88rem) {
+  .sheet-index {
+    display: block;
+    position: fixed;
+    top: 1.5rem;
+    left: 2rem;
+    width: 9.5rem;
+    z-index: 1;
+  }
+  .sheet-index ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: sheet;
+    font-variant-numeric: tabular-nums;
+    font-size: var(--step--1);
+    line-height: 1.3;
+  }
+  .sheet-index li {
+    counter-increment: sheet;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.35rem 0.5rem;
+    background: var(--sheet);
+    border: 1px solid var(--ink);
+    border-top-width: 0;
+  }
+  .sheet-index li:first-child { border-top-width: 1px; }
+  .sheet-index li::before {
+    content: counter(sheet, decimal-leading-zero);
+    flex: none;
+    color: var(--ink-muted);
+  }
+  .sheet-index a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .sheet-index a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
 }
 
 /* Drafting marks outside each sheet: a bracket at every corner and a short mark across the middle of each edge */
@@ -151,11 +212,11 @@ main {
   position: relative;
   background: var(--sheet);
   border: 1px solid var(--ink);
-  padding: clamp(1.5rem, 5vw, 3rem) var(--pad);
+  padding: clamp(0.75rem, 2.5vw, 1.25rem) var(--pad);
 }
 .titlesheet h1 {
-  margin: 0 0 1rem;
-  padding-bottom: 1rem;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--ink);
   font-size: var(--step-4);
   font-weight: 700;
@@ -183,7 +244,7 @@ h2 {
 .dimension {
   position: relative;
   height: 12px;
-  margin-top: -0.75rem;
+  margin-top: -0.5rem;
   background:
     var(--ink-line) center / 100% 1px no-repeat,
     var(--ink-line) left / 1px 100% no-repeat,
@@ -201,14 +262,14 @@ h2 {
 .dimension::after { right: 1px; border-right-width: 0; border-left: 9px solid var(--ink); }
 
 /* The four sections are views on the sheet: 2x2 on desktop, stacked on a phone */
-.views { display: grid; gap: 2rem; }
+.views { display: grid; gap: 1.35rem; }
 @media (min-width: 48rem) {
-  .views { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .views { grid-template-columns: 1fr 1fr; gap: 1.65rem; }
 }
 .views section {
   position: relative;
   background: var(--sheet);
-  padding: 0.75rem;
+  padding: 0.5rem;
   border-top: 1px solid var(--ink);
 }
 h3 {
