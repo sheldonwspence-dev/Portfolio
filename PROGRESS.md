@@ -130,3 +130,15 @@
 **Look at in the diff.** The one comment line above `.titleblock` in `styles.css`.
 
 **Things to know.** I haven't seen the page rendered. Since the title blocks may have been unstyled until now, check how they look in both color modes and on a phone.
+
+## Copy moved in: Oncore, title blocks, Also strip, alt text (2026-10-20)
+
+**What changed.** Every slot Sheldon filled in `COPY.md` is now in `index.html`, exactly as written: the Oncore card text and its two sets of notes, the title blocks (Patent's is left empty on purpose), the shared labels, the Also table headers, item numbers and rows, the three image alt texts and the deck's iframe title. The Senate link and the new AP Research link now have their real URLs. Special characters like `&` are escaped in the HTML, so they display as written.
+
+**Decisions to review.** The AP Research row had an empty link cell, so I put the "Research Paper" link there. Logged in `DECISIONS.md`.
+
+**Look at in the diff.** The Also table in `index.html`, and the title block `<dd>` lines.
+
+**Still placeholders.** `page.title`, `page.description`, `now.link.text`, `lumen.link.text`, `lumen.deck.prev`, `lumen.deck.next`, the AmeriFab, Patent, TEDx, Club and FRC card text, `amerifab.diagram.alt`, `tedx.video.title`, `tedx.slides.alt`, `club.slides.alt`, `frc.photo.alt`, and the four Patent title block slots. The URLs for `now.link.url` and `lumen.link.url` are also empty.
+
+**Typos I left alone.** None spotted. I haven't seen the page rendered.

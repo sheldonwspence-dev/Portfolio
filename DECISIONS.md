@@ -40,3 +40,4 @@ Format: `YYYY-MM-DD | decision | why | decided by`
 2026-10-19 | Sheet index is fixed to the viewport from 88rem up (not sticky inside the page) and is built by main.js from the card headings | Fixed needs no extra grid row, and copying the headings means no new visible text to write | Claude decided, Sheldon approved
 2026-10-19 | Offset outline is 6px down and right; page grid is the 24px cell at 16% construction blue | Sheldon said "a few pixels" and "very faint" without numbers | Claude decided, Sheldon approved
 2026-10-19 | Fix the stray text after the closing comment above .titleblock in styles.css | It made the browser drop the whole .titleblock rule | Sheldon
+2026-10-20 | Added the AP Research link (text and URL from COPY.md) to the empty link cell in the Also table | The table had no link for that row and Sheldon supplied one | Claude decided, Sheldon to review
