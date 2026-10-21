@@ -10,18 +10,23 @@ one-sentence summary shown in search results and link previews.
 
 ### now.name
 the startup's name.
+Oncore
 
 ### now.built
 what the startup is and what v0 does.
+Full idea planned out, filed official trademark.
 
 ### now.hard
 the hardest problem so far.
+Pitching and getting the backing (idea wise) from million$+ VC partners who tore our idea apart.
 
 ### now.learned
 what building it taught you.
+Differentiation, exit strategy, and an iterative process of learning what is right/wrong make a company thrive.
 
 ### now.results
 where things stand today.
+We are just starting a media page, getting the app started and getting all the paperwork together (waiting for signing) after we have already gotten a trademark filed.
 
 ### now.link.text
 link text for the startup's landing page.
@@ -40,6 +45,7 @@ what came of it.
 Against the best sellers in the world, I didn't qualify to even get a test medal (the test is basically a list of buzzwords), but I did get second. I got 5th at state and placed 3 spots higher when the competition became international.
 ### lumen.deck.title
 short description of the embedded deck for screen readers.
+Lumen concept pitch deck from DECA ICDC 2026, nine slides.
 
 ### lumen.deck.prev
 accessible name for the previous-slide button.
@@ -127,12 +133,15 @@ alt text describing the team photo.
 
 ### also.congress
 one line on the Congress event.
+Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.
 
 ### also.senate
 one line on Senate, linked to the Instagram post.
+Student government, senator (senior year). We often do events to try and prop up our local community and set up homecoming/other events.
 
 ### also.ap
 one line on the AP Research paper.
+Researcher, junior year: a paper I wrote trying to find the difference of engagement levels in a presentation when you do a positive attitude vs giving a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.
 
 ### now.link.url
 URL for this link (not visible text).
@@ -142,54 +151,71 @@ URL for this link (not visible text).
 
 ### also.senate.url
 URL for this link (not visible text).
+https://www.instagram.com/p/Dcq23Q2S3dY/
 
 ### tb.project.label
 title block label for the project name (shared by every card).
+Project
 
 ### now.tb.project
 what the project is called in the title block.
+Oncore
 
 ### tb.role.label
 title block label for your role (shared by every card).
+Role
 
 ### now.tb.role
 your role on this project.
+Co-founder
 
 ### tb.year.label
 title block label for the year (shared by every card).
+Years
 
 ### now.tb.year
 the year or years of the work.
+2026
 
 ### tb.rev.label
 title block label for the revision (shared by every card).
+Status
 
 ### now.tb.rev
 the revision or version, like v0 or rev 2.
+v0 in development
 
 ### lumen.tb.project
 what the project is called in the title block.
+Lumen Prompt Optimizer
 
 ### lumen.tb.role
 your role on this project.
+Creator
 
 ### lumen.tb.year
 the year or years of the work.
+2026
 
 ### lumen.tb.rev
 the revision or version, like v0 or rev 2.
+v1 live
 
 ### amerifab.tb.project
 what the project is called in the title block.
+AI backend
 
 ### amerifab.tb.role
 your role on this project.
+AI Systems Intern
 
 ### amerifab.tb.year
 the year or years of the work.
+2025
 
 ### amerifab.tb.rev
 the revision or version, like v0 or rev 2.
+In daily use
 
 ### patent.tb.project
 what the project is called in the title block.
@@ -205,93 +231,131 @@ the revision or version, like v0 or rev 2.
 
 ### tedx.tb.project
 what the project is called in the title block.
+TEDxCarmelHighSchool
 
 ### tedx.tb.role
 your role on this project.
+Leadership team (1 of 3)
 
 ### tedx.tb.year
 the year or years of the work.
+2025–present
 
 ### tedx.tb.rev
 the revision or version, like v0 or rev 2.
+Talks published
 
 ### club.tb.project
 what the project is called in the title block.
+Policy & Civility Club
 
 ### club.tb.role
 your role on this project.
+Founder & President
 
 ### club.tb.year
 the year or years of the work.
+2025–present
 
 ### club.tb.rev
 the revision or version, like v0 or rev 2.
+Meets monthly
 
 ### frc.tb.project
 what the project is called in the title block.
+Team 868, Carmel TechHounds
 
 ### frc.tb.role
 your role on this project.
+Design, programming, electrical & ops
 
 ### frc.tb.year
 the year or years of the work.
+2024–2026
 
 ### frc.tb.rev
 the revision or version, like v0 or rev 2.
+World finalist alliance
 
 ### also.th.item
 column header for the item number.
+No.
 
 ### also.th.desc
 column header for the description.
+Item
 
 ### also.th.link
 column header for the link.
+Link
 
 ### also.congress.item
 item number for the Congress event.
+01
 
 ### also.senate.item
 item number for Senate.
+02
 
 ### also.senate.link
 link text for the Senate Instagram post.
+Blood drive post
 
 ### also.ap.item
 item number for the AP Research paper.
+03
+
+### also.ap.link
+link text for the AP Research paper.
+Research Paper
+
+### also.ap.url
+URL for this link (not visible text).
+https://docs.google.com/document/d/1nylUMEMGcSc09jxwRU4x8wA5nb8e6XlyRrhuU4Zkens/edit
 
 ### header.line
 one line under the name that says who he is and what the page is.
 Constantly curious about consciousness.
 ### now.detail.image
 the sketch or photo of the product, with alt text.
+Whiteboard sketch of Oncore's business plan: a legend of influencers, fans and organizers, money flowing from investors to influencers, and notes on future growth.
 
 ### now.detail.note1
 what the first callout points at.
+These are idols or other significant figures which people surround themselves with (Taylor Swift).
 
 ### now.detail.note2
 what the second callout points at.
+Hosting spaces where people go to connect with others allows for income from people who want to be more promoted on the site, as well as taking a small percent of donations to the larger fan project.
 
 ### now.detail.note3
 what the third callout points at.
+Expanding further into the future.
 
 ### now.detail2.image
 alt text for the second sketch, the app wireframes.
+Whiteboard wireframes for the Oncore app: sign-up, a home page with a search bar, artist and fan project pages, app roles, and age rules.
 
 ### now.detail2.note1
 what the first callout on the wireframes points at.
+Different roles that can be attained in the app depending on the amount of involvement the individual puts into the app.
 
 ### now.detail2.note2
 what the second callout on the wireframes points at.
+The search page allows for finding specific projects or people.
 
 ### now.detail2.note3
 what the third callout on the wireframes points at.
+Restrictions on who can be in the app for safety purposes.
 
 ### also.kelley.item
 item number for the Kelley case competition.
+04
 
 ### also.kelley
 one line on the Kelley case competition and Oolitic Goods.
+I've worked on multiple business pitching competitions. Here is an example of one such competition's material.
 
 ### also.kelley.alt
 alt text for the Oolitic Goods engraving drawing.
+Engineering drawing for Oolitic Goods: a child's crayon drawing of the Indiana University campus prepared as a laser-engraving template for a limestone coaster, with dimensions, numbered callouts, notes and a title block.
