@@ -35,7 +35,7 @@ Phone first, responsive. Light and dark mode follow the system setting.
 
 Cards 1–7 each have four sections with these exact headings: "What I built", "The hard part", "What I learned", "Results". Everything under them is a placeholder. The notes after each card name are context for you, not text to render.
 
-1. **"Now building: [Startup]"** (the startup name is a placeholder). Notes: co-founder, registered trademark (Sheldon confirmed), v0 in development. Link to the startup's landing page (URL placeholder).
+1. **"Now building: [Startup]"** (the startup name is a placeholder). Notes: co-founder, trademark filed, not registered (Sheldon confirmed), v0 in development. Link to the startup's landing page (URL placeholder).
 2. **"Lumen"**. The DECA deck, embedded and clickable, labeled "Concept pitch, DECA ICDC 2026". Link to the live tool (URL placeholder until Sheldon picks Lumen's public link).
 3. **"AmeriFab"**. Production AI system. Slot for an inline SVG system diagram, built later from Sheldon's parts list. Every label in the diagram is his.
 4. **"Patent"**. Reserved slot, placeholders only. Don't render "patent pending" or any status until Sheldon confirms the wording.
