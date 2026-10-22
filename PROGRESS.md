@@ -152,3 +152,11 @@
 **Look at in the diff.** The click handler at the bottom of `main.js` and the `.video` rules in `styles.css`.
 
 **Things to know.** I haven't seen the page rendered or clicked the embed. Check that the player loads on click, fills its frame and works on a phone.
+
+## Copy moved in: header, AmeriFab, TEDx, Club, FRC, Also row 05 (2026-10-22)
+
+**What changed.** The new `COPY.md` text is in `index.html`, exactly as written: the header line, the four sections of AmeriFab, TEDx, Policy & Civility Club and FRC 868, and the AmeriFab title block (project "Employee job tracker", status "Still in use"). The TEDx role now reads "Speaker; leadership team (1 of 3)". Also row 05 for the philosophy club is added with no link. Files: `index.html`, `DECISIONS.md`.
+
+**Still placeholders.** `page.title`, `page.description`, `now.link.text`, `lumen.link.text`, `lumen.deck.prev`, `lumen.deck.next`, the Patent card text and title block, `amerifab.diagram.alt`, `tedx.video.title`, `tedx.video.play`, `tedx.video.caption`, `tedx.slides.alt`, `club.slides.alt`, `frc.photo.alt`. The `now.link.url` and `lumen.link.url` are also empty.
+
+**Typos I left alone.** In `club.hard` the quotes around "pointless." sit as you wrote them. Nothing else spotted. I haven't seen the page rendered.

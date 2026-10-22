@@ -43,3 +43,4 @@ Format: `YYYY-MM-DD | decision | why | decided by`
 2026-10-20 | Added the AP Research link (text and URL from COPY.md) to the empty link cell in the Also table | The table had no link for that row and Sheldon supplied one | Claude decided, Sheldon to review
 2026-10-22 | TEDx talk embeds as a plain button that loads the youtube-nocookie.com player only on click, with no thumbnail | A YouTube thumbnail would be a third-party request on page load, which rule 7 rules out | Claude decided, Sheldon to review
 2026-10-22 | Reused the existing tedx.video.title slot as the player's title and added tedx.video.play (button label) and tedx.video.caption | The button needs visible text that is Sheldon's, and the slot for the title already existed | Claude decided, Sheldon to review
+2026-10-22 | Added Also row 05 (philosophy club, no link) with text from COPY.md | Sheldon supplied the row and said it has no link | Sheldon
