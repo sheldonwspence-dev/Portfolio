@@ -203,8 +203,13 @@
           <p>[PLACEHOLDER tedx.results: what came of it]</p>
         </section>
       </div>
-      <!-- Slots for the click-to-load YouTube embed (youtube-nocookie.com) and the PDF slide viewer (M2). -->
-      <div class="slot" id="tedx-video">[PLACEHOLDER tedx.video.title: description of the talk video for screen readers]</div>
+      <!-- The talk loads from youtube-nocookie.com only after a click; main.js swaps the button for the player. Slot for the PDF slide viewer below (M2). -->
+      <figure class="video" id="tedx-video">
+        <div class="video-frame">
+          <button type="button" class="video-play" data-video-id="SMjRS8-ZSso" data-title="[PLACEHOLDER tedx.video.title: description of the talk video for screen readers]">[PLACEHOLDER tedx.video.play: label on the button that loads the TEDx talk video when clicked]</button>
+        </div>
+        <figcaption>[PLACEHOLDER tedx.video.caption: caption under the TEDx talk video]</figcaption>
+      </figure>
       <div class="slot" id="tedx-slides">[PLACEHOLDER tedx.slides.alt: description of the slides for screen readers]</div>
       <dl class="titleblock">
         <div><dt>Project</dt><dd>TEDxCarmelHighSchool</dd></div>

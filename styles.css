@@ -372,6 +372,17 @@ h3 {
   border-radius: 0;
   cursor: pointer;
 }
+/* TEDx video: a plain view frame; the button fills it until clicked, then the player replaces it */
+.video { margin: 0; padding: 0.65rem; background: var(--sheet); }
+.video-frame { aspect-ratio: 16 / 9; border: 1px solid var(--ink); }
+.video-frame iframe, .video-play { display: block; width: 100%; height: 100%; border: 0; }
+.video-play {
+  padding: 1rem;
+  font: inherit;
+  background: var(--sheet);
+  color: var(--ink);
+  cursor: pointer;
+}
 figcaption { margin-top: 0.5rem; color: var(--ink-muted); font-size: var(--step--1); }
 
 /* Detail view: a photo or sketch with up to three numbered callouts and a notes list.

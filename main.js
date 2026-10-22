@@ -145,3 +145,17 @@ document.querySelectorAll('main .card').forEach((card) => {
   item.append(link);
   sheetList.append(item);
 });
+
+// TEDx talk: nothing from YouTube loads until the visitor clicks. The privacy-enhanced domain sets no cookies until playback.
+document.querySelectorAll('.video-play').forEach((button) => {
+  button.addEventListener('click', () => {
+    const player = document.createElement('iframe');
+    player.src = `https://www.youtube-nocookie.com/embed/${button.dataset.videoId}?autoplay=1`;
+    player.title = button.dataset.title;
+    player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    player.allowFullscreen = true;
+    player.referrerPolicy = 'strict-origin-when-cross-origin';
+    button.replaceWith(player);
+    player.focus();
+  });
+});

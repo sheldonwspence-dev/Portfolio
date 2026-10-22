@@ -142,3 +142,13 @@
 **Still placeholders.** `page.title`, `page.description`, `now.link.text`, `lumen.link.text`, `lumen.deck.prev`, `lumen.deck.next`, the AmeriFab, Patent, TEDx, Club and FRC card text, `amerifab.diagram.alt`, `tedx.video.title`, `tedx.slides.alt`, `club.slides.alt`, `frc.photo.alt`, and the four Patent title block slots. The URLs for `now.link.url` and `lumen.link.url` are also empty.
 
 **Typos I left alone.** None spotted. I haven't seen the page rendered.
+
+## TEDx embed (2026-10-22)
+
+**What changed.** The TEDx card's video slot is now a click-to-load embed of `SMjRS8-ZSso` from `youtube-nocookie.com`. Until a visitor clicks, the page loads nothing from YouTube. I used a plain button with no thumbnail, because a YouTube thumbnail would be a third-party request on page load. Files: `index.html`, `main.js`, `styles.css`, `DECISIONS.md`.
+
+**New slots (empty, in `COPY.md`, not committed by me).** `tedx.video.play` (the button's visible label), `tedx.video.caption`, and for the Also strip `also.philosophy.item` (05) and `also.philosophy`. The existing `tedx.video.title` slot is now the player's title for screen readers. Your new text is in `COPY.md` only; I haven't moved it into the page, and the Also strip has no row 05 yet.
+
+**Look at in the diff.** The click handler at the bottom of `main.js` and the `.video` rules in `styles.css`.
+
+**Things to know.** I haven't seen the page rendered or clicked the embed. Check that the player loads on click, fills its frame and works on a phone.
