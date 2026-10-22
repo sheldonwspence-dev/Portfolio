@@ -194,3 +194,15 @@
 **Look at in the diff.** The `.clip-toggle` rules in `styles.css` and the clip block at the end of `main.js`.
 
 **Things to know.** I haven't seen the page rendered or pressed the buttons. Check that the button doesn't cover anything important in the clips and is easy to tap on a phone. The two new `COPY.md` slots are empty until you write the button names, so the buttons show placeholders for now.
+
+## Readability pass (2026-10-23)
+
+**What changed.** Twelve slots were replaced in `COPY.md` (committed as you asked, `Copy: typo and readability fixes...`) and the same text moved into `index.html` exactly as written: `lumen.results`, `now.built`, `now.hard`, `now.results`, `now.detail.note1`, `amerifab.built`, `amerifab.learned`, `tedx.built`, `club.hard`, `frc.built`, `also.senate` and `also.ap`.
+
+**FRC.** The first clip's alt text is now your "Starting to design and cut out material for the FRC robot." The second clip shows students at a different machine, so I kept its plain description. That is logged as "Claude decided, Sheldon to review". There was no team photo, so I removed the empty slot from the page and the `frc.photo.alt` slot from `COPY.md`.
+
+**Look at in the diff.** `index.html`, the FRC card, where the team-photo slot was.
+
+**Still placeholders.** `frc.clip.pause` and `frc.clip.play` (the button names), `now.link.text`, `club.slides.alt`, `tedx.slides.alt`, and the Patent card. The Oncore link, Patent card and both slides slots are hidden.
+
+**Typos I left alone.** None spotted.
