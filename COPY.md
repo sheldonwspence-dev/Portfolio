@@ -170,6 +170,12 @@ Silent looping clip: a student in safety glasses leans over a miter saw at a wor
 alt text for the second FRC 868 clip.
 Silent looping clip: students stand around a machine in the team's shop and watch it work.
 
+### frc.clip.pause
+accessible name for the button that pauses an FRC 868 clip.
+
+### frc.clip.play
+accessible name for the button that plays a paused FRC 868 clip.
+
 ### also.congress
 one line on the Congress event.
 Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.
