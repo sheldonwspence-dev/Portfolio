@@ -4,9 +4,11 @@ Write your text under each heading. Leave the heading and the note line alone.
 
 ### page.title
 browser tab title for the whole portfolio.
+Sheldon Spence
 
 ### page.description
 one-sentence summary shown in search results and link previews.
+Constantly consciously curious.
 
 ### now.name
 the startup's name.
@@ -49,12 +51,19 @@ Lumen concept pitch deck from DECA ICDC 2026, nine slides.
 
 ### lumen.deck.prev
 accessible name for the previous-slide button.
+Previous slide
 
 ### lumen.deck.next
 accessible name for the next-slide button.
+Next slide
+
+### lumen.photo.alt
+alt text for the DECA photo under the Lumen deck.
+A student in a dark suit holds up a DECA trophy on stage while other students wearing medals stand behind.
 
 ### lumen.link.text
 link text for the live tool.
+Try Lumen live
 
 ### amerifab.built
 what the production AI system does.
@@ -74,6 +83,7 @@ Paid for my work and created still-used software to track employee efficiency.
 
 ### amerifab.diagram.alt
 alt text describing the system diagram.
+Diagram of the AmeriFab tracker: people log hours in Asana; Zapier sends them to the ChatGPT API for feedback and into Notion, which logs everything; AWS storage was planned once proof of concept is established.
 
 ### patent.built
 what the invention is.
@@ -105,12 +115,11 @@ I built a great story and was able to learn more about the value of others.
 
 ### tedx.video.title
 description of the talk video for screen readers.
+Sheldon Spence at TEDxCarmelHighSchool
 
 ### tedx.video.play
 label on the button that loads the TEDx talk video when clicked.
-
-### tedx.video.caption
-caption under the TEDx talk video.
+Play the talk
 
 ### tedx.slides.alt
 description of the slides for screen readers.
@@ -153,6 +162,14 @@ We went to the World Championship (I wasn't there; I didn't need to be and had t
 ### frc.photo.alt
 alt text describing the team photo.
 
+### frc.clip1.alt
+alt text for the first FRC 868 clip.
+Silent looping clip: a student in safety glasses leans over a miter saw at a workbench in the team's shop while others work behind.
+
+### frc.clip2.alt
+alt text for the second FRC 868 clip.
+Silent looping clip: students stand around a machine in the team's shop and watch it work.
+
 ### also.congress
 one line on the Congress event.
 Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.
@@ -170,6 +187,7 @@ URL for this link (not visible text).
 
 ### lumen.link.url
 URL for this link (not visible text).
+https://lumen-theta-ten.vercel.app
 
 ### also.senate.url
 URL for this link (not visible text).
@@ -315,9 +333,17 @@ Link
 item number for the Congress event.
 01
 
+### also.congress.alt
+alt text for the Congress photo.
+Two group photos of speech and debate students in formal clothes holding trophies on stone steps.
+
 ### also.senate.item
 item number for Senate.
 02
+
+### also.senate.alt
+alt text for the Senate photo.
+Photos from an event in a school gym: a student in a blue polo talks with a police officer, and a student sits on a scooter board being pushed between cones.
 
 ### also.senate.link
 link text for the Senate Instagram post.
@@ -378,6 +404,30 @@ I've worked on multiple business pitching competitions. Here is an example of on
 ### also.kelley.alt
 alt text for the Oolitic Goods engraving drawing.
 Engineering drawing for Oolitic Goods: a child's crayon drawing of the Indiana University campus prepared as a laser-engraving template for a limestone coaster, with dimensions, numbered callouts, notes and a title block.
+
+### also.mocktrial.item
+item number for the mock trial row.
+06
+
+### also.mocktrial
+one line on the mock trial row.
+Witness Officer: prep & coach every witness. Indiana's only team at Nationals; only member to play two witness roles there, and both earned National Outstanding Witness.
+
+### also.mocktrial.alt
+alt text for the mock trial photo.
+A group of students in formal clothes pose with a large trophy and a banner reading "2026 State Champion".
+
+### also.econ.item
+item number for the economics club row.
+07
+
+### also.econ
+one line on the economics club row.
+Vice President: run member tracking & organization for a 36-time state-champion National Economics Challenge program (2025 national finalists).
+
+### also.econ.alt
+alt text for the economics club photo.
+Four students in black T-shirts reading "I heart Macro" stand in a row in a classroom with a woman in a blue T-shirt.
 
 ### also.philosophy.item
 item number for the philosophy club.
