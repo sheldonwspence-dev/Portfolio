@@ -160,3 +160,23 @@
 **Still placeholders.** `page.title`, `page.description`, `now.link.text`, `lumen.link.text`, `lumen.deck.prev`, `lumen.deck.next`, the Patent card text and title block, `amerifab.diagram.alt`, `tedx.video.title`, `tedx.video.play`, `tedx.video.caption`, `tedx.slides.alt`, `club.slides.alt`, `frc.photo.alt`. The `now.link.url` and `lumen.link.url` are also empty.
 
 **Typos I left alone.** In `club.hard` the quotes around "pointless." sit as you wrote them. Nothing else spotted. I haven't seen the page rendered.
+
+## Photos, clips, labels, hidden items and the AmeriFab diagram (2026-10-22)
+
+**What changed.** Files: `index.html`, `styles.css`, `main.js`, new files in `assets/`, `COPY.md` (committed separately as `6aba46e`), `DECISIONS.md`.
+
+- **Photos.** The DECA photo sits in a view frame under the Lumen deck. The Congress and Senate photos are in their Also rows. Also rows 06 (mock trial) and 07 (economics club) have your text and photos. All five are re-encoded JPEGs with every EXIF, ICC and comment segment removed. The Senate screenshot is cropped to the picture, which removes the phone's clock and status icons.
+- **FRC clips.** Two silent looping mp4s with a poster frame each, in the FRC 868 card. The originals were 14 MB and 46 MB; the page versions are 1.3 MB and 4.3 MB. They have no audio track and none of the phone's location metadata. I made them with Apple's built-in video tools, so nothing was installed. Visitors who prefer reduced motion get the poster and play controls.
+- **Text.** Page title, meta description, the Lumen link and its URL, the deck button labels and the TEDx title and play label are in the page. The TEDx caption slot is gone.
+- **Hidden.** The Oncore link, Patent card, Policy & Civility slides frame and TEDx slides slot each have `hidden`. Delete that word on the element to show it. Each has a comment saying so. The hidden Patent card also leaves the sheet index and gets no revision cloud.
+- **Diagram.** The AmeriFab diagram is inline SVG with your exact labels. AWS and the Notion-to-AWS arrow are dashed. It reads your alt text. I built it on your instruction; CLAUDE.md said to wait for AmeriFab's okay on a public diagram, so please confirm that is settled.
+
+**Decisions to review.** All the alt text, the Senate crop, the clip settings and the diagram layout, all in `DECISIONS.md`.
+
+**Look at in the diff.** The `.diagram`, `.clips`, `.photo` and `[hidden]` rules in `styles.css`, and the end of `main.js`.
+
+**Things to know.**
+- I haven't seen the page rendered or played the clips. Check the diagram's text size on a phone and that the two clips sit side by side cleanly.
+- The Congress photo still shows Instagram's "5/12" badge in its corner, and the Senate photo keeps the account name bar at its top. I left both as you supplied them.
+- The clips autoplay and loop with no pause button. They are 4 and 14 seconds long, so a visitor who can't stop motion has only the reduced-motion setting.
+- Still placeholders: `now.link.text`, `club.slides.alt`, `tedx.slides.alt`, `frc.photo.alt` and the Patent card text, all in hidden or unused slots except `frc.photo.alt`.

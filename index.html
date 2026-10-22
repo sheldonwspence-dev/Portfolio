@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[PLACEHOLDER page.title: browser tab title for the whole portfolio]</title>
-  <meta name="description" content="[PLACEHOLDER page.description: one-sentence summary shown in search results and link previews]">
+  <title>Sheldon Spence</title>
+  <meta name="description" content="Constantly consciously curious.">
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -66,7 +66,8 @@
           <li>Restrictions on who can be in the app for safety purposes.</li>
         </ol>
       </figure>
-      <p><a href="#" data-url="now.link.url">[PLACEHOLDER now.link.text: link text for the startup's landing page]</a></p>
+      <!-- SWITCH: delete the word "hidden" to show this link once the landing page has a URL. -->
+      <p hidden><a href="#" data-url="now.link.url">[PLACEHOLDER now.link.text: link text for the startup's landing page]</a></p>
       <dl class="titleblock">
         <div><dt>Project</dt><dd>Oncore</dd></div>
         <div><dt>Role</dt><dd>Co-founder</dd></div>
@@ -105,12 +106,15 @@
         </div>
         </div>
         <div class="deck-controls">
-          <button type="button" id="deck-prev" aria-label="[PLACEHOLDER lumen.deck.prev: accessible name for the previous-slide button]">&lsaquo;</button>
-          <button type="button" id="deck-next" aria-label="[PLACEHOLDER lumen.deck.next: accessible name for the next-slide button]">&rsaquo;</button>
+          <button type="button" id="deck-prev" aria-label="Previous slide">&lsaquo;</button>
+          <button type="button" id="deck-next" aria-label="Next slide">&rsaquo;</button>
         </div>
         <figcaption>Concept pitch, DECA ICDC 2026</figcaption>
       </figure>
-      <p><a href="#" data-url="lumen.link.url">[PLACEHOLDER lumen.link.text: link text for the live tool]</a></p>
+      <figure class="photo">
+        <img src="assets/lumen-deca.jpg" width="370" height="480" loading="lazy" alt="A student in a dark suit holds up a DECA trophy on stage while other students wearing medals stand behind.">
+      </figure>
+      <p><a href="https://lumen-theta-ten.vercel.app" rel="noopener">Try Lumen live</a></p>
       <dl class="titleblock">
         <div><dt>Project</dt><dd>Lumen Prompt Optimizer</dd></div>
         <div><dt>Role</dt><dd>Creator</dd></div>
@@ -141,8 +145,40 @@
           <p>Paid for my work and created still-used software to track employee efficiency.</p>
         </section>
       </div>
-      <!-- Slot for the inline SVG system diagram (M2, after AmeriFab approves a public diagram). Every label is Sheldon's. -->
-      <div class="slot" id="amerifab-diagram">[PLACEHOLDER amerifab.diagram.alt: alt text describing the system diagram]</div>
+      <!-- System diagram, drawn inline. Every label is Sheldon's; dashed means planned, not built. -->
+      <figure class="diagram" id="amerifab-diagram">
+        <svg viewBox="0 0 360 500" role="img" aria-label="Diagram of the AmeriFab tracker: people log hours in Asana; Zapier sends them to the ChatGPT API for feedback and into Notion, which logs everything; AWS storage was planned once proof of concept is established.">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" class="arrowhead"/>
+            </marker>
+          </defs>
+          <g class="flow">
+            <path d="M180 74 V114" marker-end="url(#arrow)"/>
+            <path d="M180 178 V214 H90 V250" marker-end="url(#arrow)"/>
+            <path d="M180 178 V214 H270 V250" marker-end="url(#arrow)"/>
+            <path d="M270 314 V390" class="planned" marker-end="url(#arrow)"/>
+          </g>
+          <g class="node">
+            <rect x="105" y="10" width="150" height="64"/>
+            <text x="180" y="38" class="name">Asana</text>
+            <text x="180" y="58" class="sub">people log hours</text>
+            <rect x="105" y="114" width="150" height="64"/>
+            <text x="180" y="152" class="name">Zapier</text>
+            <rect x="10" y="250" width="160" height="64"/>
+            <text x="90" y="278" class="name">ChatGPT API</text>
+            <text x="90" y="298" class="sub">gives feedback</text>
+            <rect x="190" y="250" width="160" height="64"/>
+            <text x="270" y="278" class="name">Notion</text>
+            <text x="270" y="298" class="sub">logs everything</text>
+            <rect x="190" y="390" width="160" height="94" class="planned"/>
+            <text x="270" y="418" class="name">AWS</text>
+            <text x="270" y="438" class="sub">storage, once</text>
+            <text x="270" y="456" class="sub">proof of concept</text>
+            <text x="270" y="474" class="sub">is established</text>
+          </g>
+        </svg>
+      </figure>
       <dl class="titleblock">
         <div><dt>Project</dt><dd>Employee job tracker</dd></div>
         <div><dt>Role</dt><dd>AI Systems Intern</dd></div>
@@ -152,7 +188,8 @@
     </article>
 
     <!-- 4. Patent (reserved; no status text until Sheldon confirms the wording) -->
-    <article class="card" id="patent" aria-labelledby="patent-title">
+    <!-- SWITCH: delete the word "hidden" to show this card once the attorney says the wording is ready. -->
+    <article class="card" id="patent" hidden aria-labelledby="patent-title">
       <h2 id="patent-title">Patent</h2>
       <div class="dimension" aria-hidden="true"></div>
       <div class="views">
@@ -206,11 +243,11 @@
       <!-- The talk loads from youtube-nocookie.com only after a click; main.js swaps the button for the player. Slot for the PDF slide viewer below (M2). -->
       <figure class="video" id="tedx-video">
         <div class="video-frame">
-          <button type="button" class="video-play" data-video-id="SMjRS8-ZSso" data-title="[PLACEHOLDER tedx.video.title: description of the talk video for screen readers]">[PLACEHOLDER tedx.video.play: label on the button that loads the TEDx talk video when clicked]</button>
+          <button type="button" class="video-play" data-video-id="SMjRS8-ZSso" data-title="Sheldon Spence at TEDxCarmelHighSchool">Play the talk</button>
         </div>
-        <figcaption>[PLACEHOLDER tedx.video.caption: caption under the TEDx talk video]</figcaption>
       </figure>
-      <div class="slot" id="tedx-slides">[PLACEHOLDER tedx.slides.alt: description of the slides for screen readers]</div>
+      <!-- SWITCH: delete the word "hidden" to show the slides slot (the talk replaces it for now). -->
+      <div class="slot" id="tedx-slides" hidden>[PLACEHOLDER tedx.slides.alt: description of the slides for screen readers]</div>
       <dl class="titleblock">
         <div><dt>Project</dt><dd>TEDxCarmelHighSchool</dd></div>
         <div><dt>Role</dt><dd>Speaker; leadership team (1 of 3)</dd></div>
@@ -242,7 +279,8 @@
         </section>
       </div>
       <!-- Slot for the PDF slide viewer (M2). -->
-      <div class="slot" id="club-slides">[PLACEHOLDER club.slides.alt: description of the slides for screen readers]</div>
+      <!-- SWITCH: delete the word "hidden" to show the slides frame. -->
+      <div class="slot" id="club-slides" hidden>[PLACEHOLDER club.slides.alt: description of the slides for screen readers]</div>
       <dl class="titleblock">
         <div><dt>Project</dt><dd>Policy &amp; Civility Club</dd></div>
         <div><dt>Role</dt><dd>Founder &amp; President</dd></div>
@@ -273,6 +311,15 @@
           <p>We went to the World Championship (I wasn't there; I didn't need to be and had to go to DECA ICDC), where we ended up placing second internationally.</p>
         </section>
       </div>
+      <!-- Two silent looping clips. main.js stops them autoplaying for visitors who prefer reduced motion. -->
+      <div class="clips">
+        <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc1-poster.jpg" aria-label="Silent looping clip: a student in safety glasses leans over a miter saw at a workbench in the team's shop while others work behind.">
+          <source src="assets/frc1.mp4" type="video/mp4">
+        </video>
+        <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc2-poster.jpg" aria-label="Silent looping clip: students stand around a machine in the team's shop and watch it work.">
+          <source src="assets/frc2.mp4" type="video/mp4">
+        </video>
+      </div>
       <!-- Slot for the team photo (M2). -->
       <div class="slot" id="frc-photo">[PLACEHOLDER frc.photo.alt: alt text describing the team photo]</div>
       <dl class="titleblock">
@@ -297,12 +344,22 @@
         <tbody>
           <tr>
             <td>01</td>
-            <td>Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.</td>
+            <td>
+              <p>Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.</p>
+              <figure class="thumb">
+                <img src="assets/also-congress.jpg" width="616" height="770" loading="lazy" alt="Two group photos of speech and debate students in formal clothes holding trophies on stone steps.">
+              </figure>
+            </td>
             <td></td>
           </tr>
           <tr>
             <td>02</td>
-            <td>Student government, senator (senior year). We often do events to try and prop up our local community and set up homecoming/other events.</td>
+            <td>
+              <p>Student government, senator (senior year). We often do events to try and prop up our local community and set up homecoming/other events.</p>
+              <figure class="thumb thumb-tall">
+                <img src="assets/also-senate.jpg" width="800" height="1420" loading="lazy" alt="Photos from an event in a school gym: a student in a blue polo talks with a police officer, and a student sits on a scooter board being pushed between cones.">
+              </figure>
+            </td>
             <td><a href="https://www.instagram.com/p/Dcq23Q2S3dY/">Blood drive post</a></td>
           </tr>
           <tr>
@@ -323,6 +380,26 @@
           <tr>
             <td>05</td>
             <td>Founded a biweekly philosophy discussion club, launched fall 2026.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>
+              <p>Witness Officer: prep &amp; coach every witness. Indiana's only team at Nationals; only member to play two witness roles there, and both earned National Outstanding Witness.</p>
+              <figure class="thumb">
+                <img src="assets/also-mocktrial.jpg" width="1600" height="1200" loading="lazy" alt="A group of students in formal clothes pose with a large trophy and a banner reading &quot;2026 State Champion&quot;.">
+              </figure>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>
+              <p>Vice President: run member tracking &amp; organization for a 36-time state-champion National Economics Challenge program (2025 national finalists).</p>
+              <figure class="thumb">
+                <img src="assets/also-econ.jpg" width="1600" height="1200" loading="lazy" alt="Four students in black T-shirts reading &quot;I heart Macro&quot; stand in a row in a classroom with a woman in a blue T-shirt.">
+              </figure>
+            </td>
             <td></td>
           </tr>
         </tbody>

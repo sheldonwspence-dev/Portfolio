@@ -62,7 +62,7 @@ function cloudPath(w, h, random) {
   return d;
 }
 
-document.querySelectorAll('.card .results').forEach(section => {
+document.querySelectorAll('.card:not([hidden]) .results').forEach(section => {
   const svg = document.createElementNS(SVG_NS, 'svg');
   const path = document.createElementNS(SVG_NS, 'path');
   svg.classList.add('cloud');
@@ -137,7 +137,7 @@ document.querySelectorAll('.detail-view').forEach(view => {
 
 // Sheet index: one link per card, using each card's own title. CSS numbers the list and hides it on phones.
 const sheetList = document.querySelector('.sheet-index ol');
-document.querySelectorAll('main .card').forEach((card) => {
+document.querySelectorAll('main .card:not([hidden])').forEach((card) => {
   const link = document.createElement('a');
   link.href = `#${card.id}`;
   link.textContent = card.querySelector('h2').textContent;
@@ -159,3 +159,12 @@ document.querySelectorAll('.video-play').forEach((button) => {
     player.focus();
   });
 });
+
+// Looping clips: visitors who prefer reduced motion get the poster frame and the browser's own play controls instead.
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.clips video').forEach((video) => {
+    video.removeAttribute('autoplay');
+    video.pause();
+    video.controls = true;
+  });
+}
