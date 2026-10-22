@@ -313,12 +313,18 @@
       </div>
       <!-- Two silent looping clips. main.js stops them autoplaying for visitors who prefer reduced motion. -->
       <div class="clips">
-        <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc1-poster.jpg" aria-label="Silent looping clip: a student in safety glasses leans over a miter saw at a workbench in the team's shop while others work behind.">
+        <div class="clip">
+          <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc1-poster.jpg" aria-label="Silent looping clip: a student in safety glasses leans over a miter saw at a workbench in the team's shop while others work behind.">
           <source src="assets/frc1.mp4" type="video/mp4">
         </video>
-        <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc2-poster.jpg" aria-label="Silent looping clip: students stand around a machine in the team's shop and watch it work.">
+          <button type="button" class="clip-toggle" data-label-pause="[PLACEHOLDER frc.clip.pause: accessible name for the button that pauses an FRC 868 clip]" data-label-play="[PLACEHOLDER frc.clip.play: accessible name for the button that plays a paused FRC 868 clip]" aria-label="[PLACEHOLDER frc.clip.pause: accessible name for the button that pauses an FRC 868 clip]"></button>
+        </div>
+        <div class="clip">
+          <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc2-poster.jpg" aria-label="Silent looping clip: students stand around a machine in the team's shop and watch it work.">
           <source src="assets/frc2.mp4" type="video/mp4">
         </video>
+          <button type="button" class="clip-toggle" data-label-pause="[PLACEHOLDER frc.clip.pause: accessible name for the button that pauses an FRC 868 clip]" data-label-play="[PLACEHOLDER frc.clip.play: accessible name for the button that plays a paused FRC 868 clip]" aria-label="[PLACEHOLDER frc.clip.pause: accessible name for the button that pauses an FRC 868 clip]"></button>
+        </div>
       </div>
       <!-- Slot for the team photo (M2). -->
       <div class="slot" id="frc-photo">[PLACEHOLDER frc.photo.alt: alt text describing the team photo]</div>
@@ -347,7 +353,7 @@
             <td>
               <p>Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.</p>
               <figure class="thumb">
-                <img src="assets/also-congress.jpg" width="616" height="770" loading="lazy" alt="Two group photos of speech and debate students in formal clothes holding trophies on stone steps.">
+                <img src="assets/also-congress.jpg" width="616" height="698" loading="lazy" alt="Two group photos of speech and debate students in formal clothes holding trophies on stone steps.">
               </figure>
             </td>
             <td></td>

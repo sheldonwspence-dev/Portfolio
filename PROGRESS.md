@@ -180,3 +180,17 @@
 - The Congress photo still shows Instagram's "5/12" badge in its corner, and the Senate photo keeps the account name bar at its top. I left both as you supplied them.
 - The clips autoplay and loop with no pause button. They are 4 and 14 seconds long, so a visitor who can't stop motion has only the reduced-motion setting.
 - Still placeholders: `now.link.text`, `club.slides.alt`, `tedx.slides.alt`, `frc.photo.alt` and the Patent card text, all in hidden or unused slots except `frc.photo.alt`.
+
+## Pause buttons, Congress crop, AmeriFab cleared (2026-10-23)
+
+**What changed.** Files: `index.html`, `styles.css`, `main.js`, `assets/also-congress.jpg`, `CLAUDE.md`, `DECISIONS.md`, and `COPY.md` (two empty slots, committed on their own).
+
+- **Pause/play buttons.** Each FRC clip has a small square button in its bottom-right corner. It shows two bars while playing and a triangle when paused, drawn in CSS. Its accessible name switches between two placeholders, `frc.clip.pause` and `frc.clip.play`, which I added to `COPY.md` as empty slots. Visitors who prefer reduced motion get the poster frame and press play themselves.
+- **Congress photo.** I cropped the strip above the first photo, which removes Instagram's "5/12" badge. Nobody in the photo is cut. The image is now 616 by 698 and still has no metadata.
+- **Senate photo not cropped.** The account bar sits across the top third of the police officer's head. Cropping it off would cut into him, so I left it as it was. If you want it gone anyway, the options are cutting his head off at the forehead or covering the bar. Your call.
+- **AmeriFab.** `CLAUDE.md` now says the diagram is cleared: Sheldon confirmed diagrams of what he built are fine to show publicly, as long as no company material appears. The M2 milestone line says the same.
+- **Decisions.** The alt text and the two clip lines in `DECISIONS.md` now say "Sheldon approved". The Senate no-crop line is marked "to review".
+
+**Look at in the diff.** The `.clip-toggle` rules in `styles.css` and the clip block at the end of `main.js`.
+
+**Things to know.** I haven't seen the page rendered or pressed the buttons. Check that the button doesn't cover anything important in the clips and is easy to tap on a phone. The two new `COPY.md` slots are empty until you write the button names, so the buttons show placeholders for now.

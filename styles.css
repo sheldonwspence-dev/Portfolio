@@ -387,7 +387,38 @@ h3 {
   padding: 0.65rem;
   background: var(--sheet);
 }
-.clips video { display: block; width: 100%; height: auto; max-width: 20rem; justify-self: center; border: 1px solid var(--ink); }
+.clip { position: relative; max-width: 20rem; justify-self: center; }
+.clips video { display: block; width: 100%; height: auto; border: 1px solid var(--ink); }
+/* Small pause/play button in the clip's corner; the icon is drawn by CSS so it needs no text */
+.clip-toggle {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  background: var(--sheet);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  color: var(--ink);
+  cursor: pointer;
+}
+.clip-toggle::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0.9rem;
+  height: 1rem;
+  background: linear-gradient(90deg, currentColor 0 35%, transparent 35% 65%, currentColor 65%);
+}
+.clip-toggle.paused::before {
+  width: 0;
+  height: 0;
+  background: none;
+  border-style: solid;
+  border-width: 0.5rem 0 0.5rem 0.85rem;
+  border-color: transparent transparent transparent currentColor;
+}
 
 /* AmeriFab system diagram: ink lines on sheet color; dashed means planned, not built */
 .diagram { margin: 0; padding: 0.65rem; background: var(--sheet); }

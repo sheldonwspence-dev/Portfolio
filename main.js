@@ -160,11 +160,21 @@ document.querySelectorAll('.video-play').forEach((button) => {
   });
 });
 
-// Looping clips: visitors who prefer reduced motion get the poster frame and the browser's own play controls instead.
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.querySelectorAll('.clips video').forEach((video) => {
+// Looping clips: each has a pause/play button. Visitors who prefer reduced motion get the poster frame until they press play.
+const clipsReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('.clip').forEach((clip) => {
+  const video = clip.querySelector('video');
+  const toggle = clip.querySelector('.clip-toggle');
+  const sync = () => {
+    toggle.classList.toggle('paused', video.paused);
+    toggle.setAttribute('aria-label', video.paused ? toggle.dataset.labelPlay : toggle.dataset.labelPause);
+  };
+  video.addEventListener('play', sync);
+  video.addEventListener('pause', sync);
+  toggle.addEventListener('click', () => (video.paused ? video.play() : video.pause()));
+  if (clipsReduced) {
     video.removeAttribute('autoplay');
     video.pause();
-    video.controls = true;
-  });
-}
+  }
+  sync();
+});

@@ -37,7 +37,7 @@ Cards 1–7 each have four sections with these exact headings: "What I built", "
 
 1. **"Now building: [Startup]"** (the startup name is a placeholder). Notes: co-founder, trademark filed, not registered (Sheldon confirmed), v0 in development. Link to the startup's landing page (URL placeholder).
 2. **"Lumen"**. The DECA deck, embedded and clickable, labeled "Concept pitch, DECA ICDC 2026". Link to the live tool (URL placeholder until Sheldon picks Lumen's public link).
-3. **"AmeriFab"**. Production AI system. Slot for an inline SVG system diagram, built later from Sheldon's parts list. Every label in the diagram is his.
+3. **"AmeriFab"**. Production AI system. Inline SVG system diagram, built from Sheldon's parts list. Every label in the diagram is his. Sheldon confirmed diagrams of what he built are fine to show publicly, as long as no company material appears.
 4. **"Patent"**. Reserved slot, placeholders only. Don't render "patent pending" or any status until Sheldon confirms the wording.
 5. **"TEDx"**. Talk embedded from the official TEDx YouTube channel (URL from Sheldon), plus slides.
 6. **"Policy & Civility Club"**. Founded by Sheldon. Slides.
@@ -59,7 +59,7 @@ Sheldon supplies PDFs. Convert the pages to images (`pdftoppm` if it's installed
 
 - **M0, Oct 17.** Sheldon has already committed `CLAUDE.md`, `DECISIONS.md` and `deck/index.html`. Build the skeleton: all eight cards in order with placeholders, deck embedded and clickable with the counter fixed (separate commit), light/dark working. Write `.claude/settings.json` (next section), create `COPY.md` and `PROGRESS.md`, push, and confirm the page is live. Ask Sheldon to confirm any `DECISIONS.md` lines marked "Sheldon to confirm" and update them. Finish by telling him to type `/exit` and start a fresh session next time, so the permissions file loads. Stop.
 - **M1, Oct 19–20.** Apply the design direction Sheldon brings back from the design round.
-- **M2, Oct 20–21.** Assets in: TEDx embed, PDF slides, FRC photo, links. The AmeriFab diagram goes in only after Sheldon confirms AmeriFab is fine with a public diagram.
+- **M2, Oct 20–21.** Assets in: TEDx embed, PDF slides, FRC photo, links. The AmeriFab diagram is cleared to go in: Sheldon confirmed diagrams of what he built are fine to show publicly, as long as no company material appears.
 - **M3, Oct 22.** Final check: phone and desktop, both color modes, keyboard only. List every remaining placeholder id for Sheldon.
 - **By Oct 25.** Move Sheldon's finished `COPY.md` text in. Site submitted Oct 26.
 
