@@ -448,7 +448,7 @@ STILL BUILDING
 
 ### rev.caption
 caption above the revision table on the title sheet.
-always in revision
+Revisions
 
 ### rev.th.rev
 revision table heading for the revision letter.
