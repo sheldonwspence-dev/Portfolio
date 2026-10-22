@@ -60,7 +60,7 @@ Define these as CSS custom properties on `:root`, redefined under `@media (prefe
 ## The red pen (the one messy element)
 
 - A hand-drawn-looking red revision cloud (a scalloped outline) around each card's Results section. Generate it as an SVG path from the element's size, with slight seeded irregularity in the scallops so no two clouds are identical. Redraw it on resize.
-- That's it. No other red marks, and no other decoration competing with it.
+- Besides the clouds, the only other red-pen element is the STILL BUILDING stamp on the title sheet (added in M1.7). No other red marks, and no other decoration competing with them.
 
 ## Motion
 
@@ -75,7 +75,7 @@ Added Oct 17, after the first look at Redline. Same rules apply: red only in the
 ### Page header: the title sheet
 
 - At the top inside the frame, styled as the drawing set's title sheet: an `h1` reading "Sheldon Spence" (Sheldon's words, used exactly) with a ruled line under it, then one line of text (placeholder `header.line`).
-- It is a sheet like the cards (ink border, square corners, corner and center marks) but has no grid. No red anywhere in it.
+- It is a sheet like the cards (ink border, square corners, corner and center marks) but has no grid. The only red in it is the STILL BUILDING stamp (M1.7).
 
 ### Drafting details on every sheet
 
@@ -97,6 +97,16 @@ Added Oct 19, after seeing the page rendered. Same rules apply: red only in the 
 - **Drafting-table grid:** a very faint construction-blue grid (the same 24px cell as the card grid, at 16% strength) runs across the whole page background. The cards keep their own, more visible grid.
 - **Tighter header:** the title sheet keeps its content but its vertical padding and the space around the rule under the name are roughly halved.
 - **Less dead space:** the gaps between cards and the padding inside cards are cut by about a third (card padding 1.25rem to 0.85rem, gap between cards 2.5-4rem to 1.65-2.65rem, and the gaps inside cards and between views to match).
+
+## M1.7 additions: always in revision
+
+Added Oct 22. The page is never finished, so the title sheet says so, the way a real drawing set does.
+
+- **Stamp:** a red rubber stamp reading STILL BUILDING (Sheldon's pick), angled across the top-right corner of the title sheet and overhanging it slightly. Redline red, a double-line border, bold headline type, set at about 8 degrees. The ink is uneven: an SVG filter erodes it with small specks and wobbles its edges a little, like a real stamp pressed by hand. It is a flat mark with no shadow. It is decorative and sits on top without blocking clicks. With the clouds, it is the only red-pen element on the page. It never moves or animates.
+- **Revision block:** a small engineering revision table on the title sheet, under the first line. Caption "always in revision". Columns: Rev, Date, Description, By, Approved. It is ruled like the Also parts list: an ink line under the headings and construction-blue rules between rows. Newest row first. The page shows the latest five rows and a "Full history" link to the repo's commit history on GitHub; older rows stay in the markup with `hidden`.
+- **Row rules:** one row per milestone, not per commit. Letters run A, B, C and on. The description is factual and eight words or fewer. By is "Claude" for code changes and "Sheldon" for text changes. Approved is always "Sheldon".
+- **Next revision:** under the table, a short list of what's coming. It is a plain ruled list, with no bullets that look like marks.
+- A standing rule in `CLAUDE.md` keeps the block current: every session that changes the live page adds a row and updates the Next revision list.
 
 ## Avoid
 

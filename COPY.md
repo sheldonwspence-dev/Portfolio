@@ -441,3 +441,47 @@ item number for the philosophy club.
 ### also.philosophy
 one line on the philosophy discussion club.
 Founded a biweekly philosophy discussion club, launched fall 2026.
+
+### title.stamp
+the words on the red rubber stamp on the title sheet.
+STILL BUILDING
+
+### rev.caption
+caption above the revision table on the title sheet.
+always in revision
+
+### rev.th.rev
+revision table heading for the revision letter.
+Rev
+
+### rev.th.date
+revision table heading for the date.
+Date
+
+### rev.th.desc
+revision table heading for the description.
+Description
+
+### rev.th.by
+revision table heading for who made the change.
+By
+
+### rev.th.approved
+revision table heading for who approved the change.
+Approved
+
+### rev.history
+link text for the repo's full commit history.
+Full history
+
+### rev.next.label
+label above the list of what is coming next.
+Next revision
+
+### rev.next1
+first item in the Next revision list.
+Oncore landing page
+
+### rev.next2
+second item in the Next revision list.
+Policy & Civility photos
