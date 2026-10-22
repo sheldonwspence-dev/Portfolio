@@ -230,6 +230,56 @@ main {
   .titlesheet h1 { font-size: var(--step-5); }
 }
 
+/* The STILL BUILDING stamp: the one red-pen mark besides the clouds. The filter in index.html roughens the ink. */
+.filter-defs { position: absolute; }
+.titlesheet .stamp {
+  position: absolute;
+  top: -0.6rem;
+  right: -0.4rem;
+  z-index: 1;
+  margin: 0;
+  padding: 0.2rem 0.6rem;
+  border: 3px double var(--redline);
+  color: var(--redline);
+  font-family: var(--font-head);
+  font-size: var(--step-0);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transform: rotate(8deg);
+  filter: url(#stamp-ink);
+  pointer-events: none;
+}
+@media (min-width: 48rem) {
+  .titlesheet .stamp { top: -0.9rem; right: 0.5rem; font-size: var(--step-2); border-width: 4px; padding: 0.3rem 0.9rem; }
+}
+
+/* Revision block on the title sheet: a small engineering revision table */
+.revisions {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.revisions caption { padding-bottom: 0.25rem; text-align: left; color: var(--ink-muted); }
+.revisions th, .revisions td {
+  padding: 0.25rem 0.5rem 0.25rem 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--construction);
+}
+.revisions thead th { border-bottom: 1px solid var(--ink); font-weight: 600; }
+.revisions tbody th { font-family: var(--font-head); font-weight: 600; }
+.revisions tbody tr:last-child th, .revisions tbody tr:last-child td { border-bottom: 0; }
+.titlesheet .rev-history { margin-top: 0.5rem; font-size: var(--step--1); }
+.rev-next { margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid var(--ink); font-size: var(--step--1); }
+.titlesheet .rev-next p { font-size: var(--step--1); }
+.titlesheet .rev-next-label { color: var(--ink-muted); }
+.rev-next ul { margin: 0.25rem 0 0; padding: 0; list-style: none; }
+
 h2 {
   margin: 0;
   width: fit-content;

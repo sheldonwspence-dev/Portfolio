@@ -181,7 +181,7 @@
 - The clips autoplay and loop with no pause button. They are 4 and 14 seconds long, so a visitor who can't stop motion has only the reduced-motion setting.
 - Still placeholders: `now.link.text`, `club.slides.alt`, `tedx.slides.alt`, `frc.photo.alt` and the Patent card text, all in hidden or unused slots except `frc.photo.alt`.
 
-## Pause buttons, Congress crop, AmeriFab cleared (2026-10-23)
+## Pause buttons, Congress crop, AmeriFab cleared (2026-10-22)
 
 **What changed.** Files: `index.html`, `styles.css`, `main.js`, `assets/also-congress.jpg`, `CLAUDE.md`, `DECISIONS.md`, and `COPY.md` (two empty slots, committed on their own).
 
@@ -195,7 +195,7 @@
 
 **Things to know.** I haven't seen the page rendered or pressed the buttons. Check that the button doesn't cover anything important in the clips and is easy to tap on a phone. The two new `COPY.md` slots are empty until you write the button names, so the buttons show placeholders for now.
 
-## Readability pass (2026-10-23)
+## Readability pass (2026-10-22)
 
 **What changed.** Twelve slots were replaced in `COPY.md` (committed as you asked, `Copy: typo and readability fixes...`) and the same text moved into `index.html` exactly as written: `lumen.results`, `now.built`, `now.hard`, `now.results`, `now.detail.note1`, `amerifab.built`, `amerifab.learned`, `tedx.built`, `club.hard`, `frc.built`, `also.senate` and `also.ap`.
 
@@ -206,3 +206,18 @@
 **Still placeholders.** `frc.clip.pause` and `frc.clip.play` (the button names), `now.link.text`, `club.slides.alt`, `tedx.slides.alt`, and the Patent card. The Oncore link, Patent card and both slides slots are hidden.
 
 **Typos I left alone.** None spotted.
+
+## Always in revision: stamp, revision block, standing rule (2026-10-22)
+
+**What changed.** The title sheet now has a red STILL BUILDING stamp, a revision table with a Next revision list, and a "Full history" link to the repo's commits on GitHub. Files: `index.html`, `styles.css`, `DESIGN.md` (updated first, new M1.7 section and two lines that said "no red" in the title sheet), `CLAUDE.md` (new rule 8), `COPY.md`, `DECISIONS.md`.
+
+- **Labels.** "Pause clip" and "Play clip" are in `COPY.md` and the page. I committed them myself as `deaff88` and moved them in as `4726846`.
+- **Stamp.** Live text in the redline red with a double border, turned about 8 degrees across the title sheet's top-right corner. An SVG filter gives it specks and slightly wobbly edges. It doesn't block clicks.
+- **Revision block.** Seven rows from git history, newest first: A Oct 17 First issue, B Redline design, C title sheet and detail views, D Oct 19 sheet index and stacked sheets, E Oct 22 photos and diagram, F readability pass, G this revision block. The page shows C to G; A and B are in the markup with `hidden`. By is Claude for code and Sheldon for the readability pass. Approved is always Sheldon. The row descriptions are my wording and aren't in `COPY.md`, since Claude keeps them up to date under the new rule.
+- **Rule 8 in `CLAUDE.md`.** Each session that changes the live page adds a row at the top, hides the oldest visible row, and updates the Next revision list. Logged in `DECISIONS.md`.
+- **COPY.md.** Eleven new slots with your text from your message: stamp, caption, five table headings, Full history, Next revision and its two items.
+- **Date fix.** My last two entries said Oct 23; the day is Oct 22. I corrected them in `DECISIONS.md` and `PROGRESS.md` and logged it.
+
+**Look at in the diff.** The `.stamp` and `.revisions` rules in `styles.css`, and the title sheet header in `index.html`.
+
+**Things to know.** I haven't seen the page rendered. The stamp overhangs the title sheet's corner and on a phone it may sit over the end of the name; check that and how the filter looks in both color modes. The table has five narrow columns on a phone, so descriptions may wrap to two or three lines.

@@ -14,6 +14,89 @@
   <header class="titlesheet">
     <h1>Sheldon Spence</h1>
     <p>Constantly consciously curious.</p>
+    <!-- The stamp is drawn rough by the #stamp-ink filter below. -->
+    <p class="stamp">STILL BUILDING</p>
+    <svg class="filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <filter id="stamp-ink" x="-5%" y="-10%" width="110%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="grain"/>
+        <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.2" result="specks"/>
+        <feComposite in="SourceGraphic" in2="specks" operator="in" result="worn"/>
+        <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3" result="wobble"/>
+        <feDisplacementMap in="worn" in2="wobble" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </svg>
+    <!-- Revision block. Newest row first; keep the latest five visible and mark older rows hidden (see CLAUDE.md rule 8). -->
+    <table class="revisions">
+      <caption>always in revision</caption>
+      <thead>
+        <tr>
+          <th scope="col">Rev</th>
+          <th scope="col">Date</th>
+          <th scope="col">Description</th>
+          <th scope="col">By</th>
+          <th scope="col">Approved</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th scope="row">G</th>
+            <td>Oct 22</td>
+            <td>Revision block and STILL BUILDING stamp</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr>
+            <th scope="row">F</th>
+            <td>Oct 22</td>
+            <td>Readability pass on page text</td>
+            <td>Sheldon</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr>
+            <th scope="row">E</th>
+            <td>Oct 22</td>
+            <td>Photos, clips, TEDx video, AmeriFab diagram</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr>
+            <th scope="row">D</th>
+            <td>Oct 19</td>
+            <td>Sheet index, stacked sheets, tighter spacing</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr>
+            <th scope="row">C</th>
+            <td>Oct 17</td>
+            <td>Title sheet, drafting marks, annotated detail views</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr hidden>
+            <th scope="row">B</th>
+            <td>Oct 17</td>
+            <td>Redline design applied to all sheets</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr hidden>
+            <th scope="row">A</th>
+            <td>Oct 17</td>
+            <td>First issue</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+      </tbody>
+    </table>
+    <p class="rev-history"><a href="https://github.com/sheldonwspence-dev/Portfolio/commits/main" rel="noopener">Full history</a></p>
+    <div class="rev-next">
+      <p class="rev-next-label">Next revision</p>
+      <ul>
+        <li>Oncore landing page</li>
+        <li>Policy &amp; Civility photos</li>
+      </ul>
+    </div>
   </header>
   <main>
 
