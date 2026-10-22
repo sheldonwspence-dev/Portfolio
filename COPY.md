@@ -16,11 +16,11 @@ Oncore
 
 ### now.built
 what the startup is and what v0 does.
-Full idea planned out, filed official trademark.
+Full idea planned out; filed an official trademark.
 
 ### now.hard
 the hardest problem so far.
-Pitching and getting the backing (idea wise) from million$+ VC partners who tore our idea apart.
+Pitching and getting the backing (idea-wise) from $1M+ VC partners who tore our idea apart.
 
 ### now.learned
 what building it taught you.
@@ -28,7 +28,7 @@ Differentiation, exit strategy, and an iterative process of learning what is rig
 
 ### now.results
 where things stand today.
-We are just starting a media page, getting the app started and getting all the paperwork together (waiting for signing) after we have already gotten a trademark filed.
+We are just starting a media page, getting the app started, and getting all the paperwork together (waiting for signing), after we have already gotten a trademark filed.
 
 ### now.link.text
 link text for the startup's landing page.
@@ -44,7 +44,7 @@ what building it taught you.
 A good story is the most effective way to both tease out truth and have someone believe in your idea.
 ### lumen.results
 what came of it.
-Against the best sellers in the world, I didn't qualify to even get a test medal (the test is basically a list of buzzwords), but I did get second. I got 5th at state and placed 3 spots higher when the competition became international.
+Against the best sellers in the world, I didn't qualify to even get a test medal (the test is basically a list of buzzwords), but I did get second overall. I got 5th at state and placed 3 spots higher when the competition became international.
 ### lumen.deck.title
 short description of the embedded deck for screen readers.
 Lumen concept pitch deck from DECA ICDC 2026, nine slides.
@@ -67,7 +67,7 @@ Try Lumen live
 
 ### amerifab.built
 what the production AI system does.
-Software which tracked employee job progress and hours.
+Software that tracked employee job progress and hours.
 
 ### amerifab.hard
 the hardest problem.
@@ -75,7 +75,7 @@ Being able to communicate the value and reality of what I was building to everyo
 
 ### amerifab.learned
 what building it taught you.
-Most importantly, the value of proper communication and the future ability that AI has on streamlining rote processes.
+Most importantly, the value of proper communication and the future ability AI has to streamline rote processes.
 
 ### amerifab.results
 what it has done in production.
@@ -99,7 +99,7 @@ current status, worded as Sheldon confirms with the attorney.
 
 ### tedx.built
 what the talk was and what you made for it.
-I helped set up the event for TEDx, along with creating the presentation, doing research for it.
+I helped set up the TEDx event, along with creating the presentation and doing the research for it.
 
 ### tedx.hard
 the hardest part of giving the talk.
@@ -130,7 +130,7 @@ I built the club and the account dedicated to showing the value of working with 
 
 ### club.hard
 the hardest problem.
-Getting people involved, which initially seemed "pointless."
+Getting people involved in something that initially seemed "pointless."
 
 ### club.learned
 what founding it taught you.
@@ -145,7 +145,7 @@ description of the slides for screen readers.
 
 ### frc.built
 your role on the team and what you built.
-I built parts of the robot electrical board, part of the system to track competition statistics, as well as doing outreach for financing the robot.
+I built parts of the robot's electrical board and part of the system to track competition statistics. I also did outreach for financing the robot.
 
 ### frc.hard
 the hardest problem.
@@ -159,12 +159,9 @@ A lot of people have a lot of opinions about how something should get done, but 
 how the team and your work did.
 We went to the World Championship (I wasn't there; I didn't need to be and had to go to DECA ICDC), where we ended up placing second internationally.
 
-### frc.photo.alt
-alt text describing the team photo.
-
 ### frc.clip1.alt
 alt text for the first FRC 868 clip.
-Silent looping clip: a student in safety glasses leans over a miter saw at a workbench in the team's shop while others work behind.
+Starting to design and cut out material for the FRC robot.
 
 ### frc.clip2.alt
 alt text for the second FRC 868 clip.
@@ -182,11 +179,11 @@ Congress Event Head: I lead our new extemporaneous-style Congress division (~15â
 
 ### also.senate
 one line on Senate, linked to the Instagram post.
-Student government, senator (senior year). We often do events to try and prop up our local community and set up homecoming/other events.
+Student government, senator (senior year). We often do events to try and prop up our local community and set up homecoming and other events.
 
 ### also.ap
 one line on the AP Research paper.
-Researcher, junior year: a paper I wrote trying to find the difference of engagement levels in a presentation when you do a positive attitude vs giving a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.
+Researcher, junior year: a paper I wrote trying to find the difference in engagement levels during a presentation when you use a positive attitude vs. a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.
 
 ### now.link.url
 URL for this link (not visible text).
@@ -373,7 +370,7 @@ Constantly consciously curious.
 
 ### now.detail.note1
 what the first callout points at.
-These are idols or other significant figures which people surround themselves with (Taylor Swift).
+These are idols or other significant figures that people surround themselves with (Taylor Swift).
 
 ### now.detail.note2
 what the second callout points at.
