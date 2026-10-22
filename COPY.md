@@ -169,9 +169,11 @@ Silent looping clip: students stand around a machine in the team's shop and watc
 
 ### frc.clip.pause
 accessible name for the button that pauses an FRC 868 clip.
+Pause clip
 
 ### frc.clip.play
 accessible name for the button that plays a paused FRC 868 clip.
+Play clip
 
 ### also.congress
 one line on the Congress event.
