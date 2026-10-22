@@ -58,15 +58,19 @@ link text for the live tool.
 
 ### amerifab.built
 what the production AI system does.
+Software which tracked employee job progress and hours.
 
 ### amerifab.hard
 the hardest problem.
+Being able to communicate the value and reality of what I was building to everyone in the organization.
 
 ### amerifab.learned
 what building it taught you.
+Most importantly, the value of proper communication and the future ability that AI has on streamlining rote processes.
 
 ### amerifab.results
 what it has done in production.
+Paid for my work and created still-used software to track employee efficiency.
 
 ### amerifab.diagram.alt
 alt text describing the system diagram.
@@ -85,48 +89,66 @@ current status, worded as Sheldon confirms with the attorney.
 
 ### tedx.built
 what the talk was and what you made for it.
+I helped set up the event for TEDx, along with creating the presentation, doing research for it.
 
 ### tedx.hard
 the hardest part of giving the talk.
+Creating the story behind the presentation and creating the presentation.
 
 ### tedx.learned
 what the talk taught you.
+I learned how much effort is put into even hosting a small event.
 
 ### tedx.results
 what came of it.
+I built a great story and was able to learn more about the value of others.
 
 ### tedx.video.title
 description of the talk video for screen readers.
+
+### tedx.video.play
+label on the button that loads the TEDx talk video when clicked.
+
+### tedx.video.caption
+caption under the TEDx talk video.
 
 ### tedx.slides.alt
 description of the slides for screen readers.
 
 ### club.built
 what the club is and why you founded it.
+I built the club and the account dedicated to showing the value of working with others: monthly conversations on live bills and rulings, learning to disagree without being disagreeable.
 
 ### club.hard
 the hardest problem.
+Getting people involved, which initially seemed "pointless."
 
 ### club.learned
 what founding it taught you.
+I learned the difficulty that comes with trying to create something that is actually successful.
 
 ### club.results
 what the club has done.
+Created a small community of people I have a lot of pride in.
 
 ### club.slides.alt
 description of the slides for screen readers.
 
 ### frc.built
 your role on the team and what you built.
+I built parts of the robot electrical board, part of the system to track competition statistics, as well as doing outreach for financing the robot.
 
 ### frc.hard
 the hardest problem.
+Having to be the only (official) person to integrate the desires of robot ops and electrical into one succinct system.
 
 ### frc.learned
 what the team taught you.
+A lot of people have a lot of opinions about how something should get done, but at the end of the day the most success is found by constant iteration.
 
 ### frc.results
 how the team and your work did.
+We went to the World Championship (I wasn't there; I didn't need to be and had to go to DECA ICDC), where we ended up placing second internationally.
 
 ### frc.photo.alt
 alt text describing the team photo.
@@ -203,7 +225,7 @@ v1 live
 
 ### amerifab.tb.project
 what the project is called in the title block.
-AI backend
+Employee job tracker
 
 ### amerifab.tb.role
 your role on this project.
@@ -215,7 +237,7 @@ the year or years of the work.
 
 ### amerifab.tb.rev
 the revision or version, like v0 or rev 2.
-In daily use
+Still in use
 
 ### patent.tb.project
 what the project is called in the title block.
@@ -235,7 +257,7 @@ TEDxCarmelHighSchool
 
 ### tedx.tb.role
 your role on this project.
-Leadership team (1 of 3)
+Speaker; leadership team (1 of 3)
 
 ### tedx.tb.year
 the year or years of the work.
@@ -315,10 +337,7 @@ https://docs.google.com/document/d/1nylUMEMGcSc09jxwRU4x8wA5nb8e6XlyRrhuU4Zkens/
 
 ### header.line
 one line under the name that says who he is and what the page is.
-Constantly curious about consciousness.
-### now.detail.image
-the sketch or photo of the product, with alt text.
-Whiteboard sketch of Oncore's business plan: a legend of influencers, fans and organizers, money flowing from investors to influencers, and notes on future growth.
+Constantly consciously curious.
 
 ### now.detail.note1
 what the first callout points at.
@@ -359,3 +378,11 @@ I've worked on multiple business pitching competitions. Here is an example of on
 ### also.kelley.alt
 alt text for the Oolitic Goods engraving drawing.
 Engineering drawing for Oolitic Goods: a child's crayon drawing of the Indiana University campus prepared as a laser-engraving template for a limestone coaster, with dimensions, numbered callouts, notes and a title block.
+
+### also.philosophy.item
+item number for the philosophy club.
+05
+
+### also.philosophy
+one line on the philosophy discussion club.
+Founded a biweekly philosophy discussion club, launched fall 2026.
