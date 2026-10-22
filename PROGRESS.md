@@ -221,3 +221,17 @@
 **Look at in the diff.** The `.stamp` and `.revisions` rules in `styles.css`, and the title sheet header in `index.html`.
 
 **Things to know.** I haven't seen the page rendered. The stamp overhangs the title sheet's corner and on a phone it may sit over the end of the name; check that and how the filter looks in both color modes. The table has five narrow columns on a phone, so descriptions may wrap to two or three lines.
+
+## Revision block fixes (2026-10-22)
+
+**What changed.** Files: `COPY.md`, `index.html`, `DESIGN.md`, `DECISIONS.md`.
+
+- **Caption.** `rev.caption` is now "Revisions" in `COPY.md` and on the page. I committed `COPY.md` first as `aaeb101`; its message says "always in revision" was my working label and "Revisions" is your text.
+- **Row F.** By is now Claude. I also matched `DESIGN.md`, which named the old caption.
+- **Dates.** I checked every row against `git log` in Indiana time. All seven match, so none changed. Row C is the one that differs from your chat notes: the M1.5 commits are stamped Oct 17, 19:13 to 19:16 Indiana time, so I left it at Oct 17. If it should read Oct 18, tell me which commits you mean.
+- **New row H.** Oct 22, "Revision caption and row attribution fixes", By Claude, Approved Sheldon. Per rule 8 it sits at the top, row C is now hidden so five rows show (H to D), and the Next revision list is unchanged.
+- **75797a7.** I did not amend it. `DECISIONS.md` now says its message claimed the text came from you, but the slot notes were my wording and you hadn't asked for that commit.
+
+**Look at in the diff.** The revision table in `index.html`.
+
+**Things to know.** I haven't seen the page rendered.
