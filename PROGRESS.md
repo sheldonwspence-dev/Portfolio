@@ -258,3 +258,13 @@
 **Look at in the diff.** The `<td>—</td>` cells and the revision table in `index.html`.
 
 **Things to know.** I count five dashes, not four as I reported earlier: the Also table has five rows with no link (I had listed three plus "the last row"). I haven't seen the page rendered.
+
+## External links open in a new tab (2026-10-22)
+
+**What changed.** Every link that leaves the portfolio now has `target="_blank"` and `rel="noopener"`: Full history, Try Lumen live, the Instagram post and the Research Paper. The USPTO link already did. I also gave the same attributes to the hidden Oncore landing-page link, since its URL will be external when you switch it on. There are no other external links, and the one in-page `#` link is the Oncore link just mentioned. Files: `index.html`, `DECISIONS.md`. New revision row K (Oct 22, "External links open in a new tab", By Claude, Approved Sheldon); row F is now hidden so five rows show.
+
+**Rule 9 check on the live page after the push.** The page loads, row K is there, all five visible external links and the hidden Oncore link carry `target="_blank"` and `rel="noopener"`, and no placeholders are visible. The same 11 are in the HTML inside hidden elements.
+
+**Look at in the diff.** The anchors in `index.html` and the revision table.
+
+**Things to know.** I haven't seen the page rendered.
