@@ -268,3 +268,7 @@
 **Look at in the diff.** The anchors in `index.html` and the revision table.
 
 **Things to know.** I haven't seen the page rendered.
+
+## Application submitted (2026-10-22)
+
+Sheldon submitted the Horowitz Andreessen Academy Founding Class application on Oct 22, 2026, with three links: the portfolio, Lumen live, and the Lumen repo. Reviewers may be viewing from now on, so CLAUDE.md rule 9 stays in force: after every push, load the live page and confirm it renders with no visible placeholders. No code changed in this entry, so there is no revision row.
