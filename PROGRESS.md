@@ -235,3 +235,16 @@
 **Look at in the diff.** The revision table in `index.html`.
 
 **Things to know.** I haven't seen the page rendered.
+
+## Trademark wording and pre-submission check (2026-10-22)
+
+**What changed.** In `now.built`, "filed an official trademark" is now "filed a federal trademark application (U.S. Serial No. 50001365)", in `COPY.md` and on the page. The serial number links to the USPTO status page and opens in a new tab. I committed `COPY.md` first as `6a36e7e`; its message says Claude suggested the wording, you approved it, and the number is from your USPTO screenshot. Files: `COPY.md`, `index.html`, `CLAUDE.md` (new rule 9: after every push, load the live page and confirm no placeholders), `DECISIONS.md`. New revision row I (Oct 22, "Trademark application wording and USPTO link", By Claude, Approved Sheldon); row D is now hidden so five rows show.
+
+**Pre-submission check of the live page (report only, nothing fixed).**
+1. **Placeholders.** None visible. Eleven `[PLACEHOLDER ...]` strings are still in the HTML but sit inside `hidden` elements, so visitors don't see them: `now.link.text`, the four Patent text slots, the four Patent title-block slots, `tedx.slides.alt`, `club.slides.alt`. The "Link" column in the Also strip is empty for items 01, 04, 05 and the last row (blank cells, no text). Page `<title>` is "Sheldon Spence" and the meta description is "Constantly consciously curious." (no placeholders).
+2. **Links.** All six returned 200 with no redirects: Lumen, Instagram, AP Research doc, Full history, USPTO. The TEDx embed (`SMjRS8-ZSso`, loads on click) also returned 200. The Google Doc came back titled "Research Paper - Google Docs" with no sign-in redirect, so it looks public, but I couldn't open it as a logged-out browser would. Instagram returns only its generic shell to `curl`, so I can't confirm the post shows without a login prompt. The USPTO page is a JavaScript app, so I can't confirm the case loads from the `#` link; you should click it once. Nothing redirected to a sign-in page.
+3. **Lumen.** The page loads. Its `/api/optimize` rejects requests with no matching Origin (`bad_origin`), so I sent one with Lumen's own origin: 200 in 3.8 seconds, with an improved prompt, highlights and changes for "write me a thank you email for a donor". The brackets in that result are Lumen's own fill-in fields.
+
+**Look at in the diff.** The `now.built` paragraph and the revision table in `index.html`.
+
+**Things to know.** I haven't seen the page rendered. I first appended rule 9 after "Every session" by mistake and moved it under rule 8 before committing.
