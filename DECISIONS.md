@@ -69,3 +69,5 @@ Format: `YYYY-MM-DD | decision | why | decided by`
 2026-10-22 | rev.caption is "Revisions", not "always in revision" | "always in revision" was Claude's working label in a prompt, not Sheldon's text | Sheldon
 2026-10-22 | Revision row F's By changed from Sheldon to Claude | Its commit message says "suggested by Claude, approved by Sheldon" | Sheldon
 2026-10-22 | Revision row dates checked against git log in Indiana time; none changed. Row C stays Oct 17 | The M1.5 commits are all timestamped Oct 17, 19:13 to 19:16 Indiana time, not Oct 18 | Claude decided, Sheldon to review
+2026-10-22 | Standing rule (CLAUDE.md rule 9): after every push, load the live page and confirm it renders with no placeholders | Reviewers may be looking at the live site at any time | Sheldon
+2026-10-22 | now.built says "filed a federal trademark application (U.S. Serial No. 50001365)", with the serial number linked to the USPTO status page in a new tab | Wording suggested by Claude, number from Sheldon's USPTO screenshot | Claude proposed, Sheldon approved

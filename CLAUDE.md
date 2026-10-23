@@ -29,6 +29,7 @@ Sheldon wants you to work through milestones without him watching.
 6. **No visual identity yet.** The look comes from a separate design round. Until Sheldon brings that back, style for structure only: system font stack, greys, spacing, responsive layout. Don't choose fonts, colors, or a style. When the direction arrives, it will be deliberately different from the deck and Lumen: no cream/amber palette, no Georgia.
 7. **No trackers.** No third-party scripts. The one exception is the YouTube embed: use `youtube-nocookie.com` and load the player only when clicked.
 8. **Keep the revision block current.** Every session that changes the live page adds one row to the revision block on the title sheet: the next letter, today's date, a factual description of eight words or fewer, By ("Claude" for code changes, "Sheldon" for text changes) and Approved ("Sheldon"). Put the new row at the top, keep the latest five rows visible and mark older rows `hidden`, and update the Next revision list. Log the row's description in `DECISIONS.md` only if it records a real choice.
+9. **Check the live page after every push.** Load the live page and confirm it renders with no visible placeholders, because reviewers may be looking. Report anything that fails.
 
 ## Page
 
