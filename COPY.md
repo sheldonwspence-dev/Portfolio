@@ -16,7 +16,7 @@ Oncore
 
 ### now.built
 what the startup is and what v0 does.
-Full idea planned out; filed an official trademark.
+Full idea planned out; filed a federal trademark application (U.S. Serial No. 50001365).
 
 ### now.hard
 the hardest problem so far.
