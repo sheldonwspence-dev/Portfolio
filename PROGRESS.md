@@ -248,3 +248,13 @@
 **Look at in the diff.** The `now.built` paragraph and the revision table in `index.html`.
 
 **Things to know.** I haven't seen the page rendered. I first appended rule 9 after "Every session" by mistake and moved it under rule 8 before committing.
+
+## Dash in empty Also link cells (2026-10-22)
+
+**What changed.** The five empty Link cells in the Also table now show a dash (—), the drafting convention for "none". Visual only; there is no `COPY.md` slot. Files: `index.html`, `DECISIONS.md` (logged as Claude proposed, Sheldon approved). New revision row J (Oct 22, "Dash in empty Also link cells", By Claude, Approved Sheldon); row E is now hidden so five rows show.
+
+**Rule 9 check on the live page after the push.** The page loads, row J and five dashes are there, no empty cells remain, and no placeholders are visible. The same 11 placeholders are in the HTML inside hidden elements.
+
+**Look at in the diff.** The `<td>—</td>` cells and the revision table in `index.html`.
+
+**Things to know.** I count five dashes, not four as I reported earlier: the Also table has five rows with no link (I had listed three plus "the last row"). I haven't seen the page rendered.
