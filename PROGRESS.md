@@ -272,3 +272,37 @@
 ## Application submitted (2026-10-22)
 
 Sheldon submitted the Horowitz Andreessen Academy Founding Class application on Oct 22, 2026, with three links: the portfolio, Lumen live, and the Lumen repo. Reviewers may be viewing from now on, so CLAUDE.md rule 9 stays in force: after every push, load the live page and confirm it renders with no visible placeholders. No code changed in this entry, so there is no revision row.
+
+## Rev L: cover sheet plus Built, Competed, Led pages (2026-11-22)
+
+The site is now Sheldon's ongoing portfolio, not just the Academy application, so the single long page became a drawing set: a cover sheet and three section pages.
+
+**What changed**
+- `index.html` is now the cover. It keeps the title sheet (name, tagline, stamp, revision block) and adds a hidden intro slot, a sheet index grouped by series (B Built, C Competed, L Led, W Wrote) with each sheet's number, title, Status and link, and a contact block (GitHub now; email, LinkedIn and resume PDF behind switches). The AP Research paper is index row W-01, linked straight to the paper.
+- `built/index.html`, `competed/index.html` and `led/index.html` hold the sheets, giving the clean URLs /Portfolio/built/, /competed/ and /led/. All four pages share the same header (the name links back to the cover, plus the series nav), `styles.css` and `main.js`.
+- Every sheet has a sheet number above its heading (B-01 and so on) and an anchor id, so it can be linked directly (for example /Portfolio/built/#lumen).
+- Text, images, alt text and links were moved by a script that cut them out of the old page, not retyped. A check confirmed every old string is still on the site, except the ones meant to go: the Also row numbers and column headings, the "Now building: Oncore" heading (now "Oncore"), and the deleted Policy & Civility slides slot.
+- The former Also rows are now compact sheets: heading, the same text and photo, and the link where there was one.
+- Oncore is B-07, last and compact: only "What I built" and the title block show. The other three sections and both whiteboard figures are still in the file behind one switch.
+- LunLux (B-04) and Patent (B-05) show their index rows; both sheets stay hidden. Diamond Challenge (B-06) is an index row with no sheet. DECA ICDC 2026 (C-01) points to sheet B-01.
+- Policy & Civility has a Press list with one HiLite link. The White House feature is not linked.
+- `main.js` now only runs the parts a page has, so the deck runs only on Built, the FRC clips load only on Built, and the left sheet index only appears on the section pages, numbered with each sheet's own number.
+- Revision row L added and row G hidden. Next revision is now "Mock trial sheet" and "LunLux sheet".
+
+**Files:** `CLAUDE.md`, `DESIGN.md`, `DECISIONS.md`, `index.html`, `built/index.html`, `competed/index.html`, `led/index.html`, `styles.css`, `main.js`, `COPY.md`.
+
+**Commits:** docs (`d001779`), design (`c94b156`), code with new labels as placeholders (`e448e20`), copy (`2c3bbe4`), so the history shows the structure and the words separately.
+
+**Checks before the push**
+- No visible `[PLACEHOLDER]` on any page. The 27 that remain are all inside hidden elements.
+- All 51 local links, images and anchors resolve on a local server. Every external link returns 200 (USPTO not re-checked; its page is a script app).
+- The deck file is unchanged and still has 9 slides; its iframe path resolves from /built/.
+- Every sheet is one click from the cover (index link) and one click back (the name in the header).
+- Keyboard: everything clickable is a real link or button, with no tabindex tricks, so tab order follows the page.
+- Not checked by Claude: how it looks at phone and desktop width, in light and dark, and clicking through the deck in a browser. There is no browser on this machine and installing one needs Sheldon's OK. Sheldon should look at those.
+
+**Decisions to review:** the press link text format (headline, HiLite, date with commas); the compact Oncore layout running its one section full width (CSS `:has`, which works in all current browsers); and "Primary" as the screen-reader name for the series nav.
+
+**What to look at in the diff:** `e448e20` for the structure and `2c3bbe4` for every word that changed. In `COPY.md`, the edited values are now.tb.rev, lumen.tb.rev, club.tb.role and rev.next1/2, plus the new "Rev L" section at the bottom.
+
+**Typos noticed, left alone:** none.
