@@ -108,6 +108,37 @@ Added Oct 22. The page is never finished, so the title sheet says so, the way a 
 - **Next revision:** under the table, a short list of what's coming. It is a plain ruled list, with no bullets that look like marks.
 - A standing rule in `CLAUDE.md` keeps the block current: every session that changes the live page adds a row and updates the Next revision list.
 
+## Rev L: cover sheet plus section pages
+
+Added Nov 22, 2026. The single page becomes a drawing set: a cover sheet and three section pages. Same rules: red only in the clouds and the stamp, no shadows, nothing cream or amber.
+
+### Files and URLs
+
+- `index.html` is the cover. `built/index.html`, `competed/index.html` and `led/index.html` give the clean URLs `/Portfolio/built/`, `/competed/`, `/led/`.
+- One shared `styles.css` and `main.js`. Section pages reach them, the assets and the deck with `../` paths. `main.js` only runs the parts whose elements are on the page, so the deck, the FRC clips and the clouds load only where they appear.
+
+### Shared header (every page)
+
+- A thin ruled bar at the top of the frame: "Sheldon Spence" on the left, linking to the cover, and the series nav (Built, Competed, Led) on the right. On a phone it wraps under the name.
+- The current page's nav item is marked with `aria-current="page"` and a solid ink underline; the others use the normal link underline.
+
+### Cover
+
+- The title sheet keeps the name, tagline, stamp, revision block and Next revision list. The intro (`cover.intro`) sits under the tagline, hidden while blank.
+- **Sheet index:** a ruled table like the Also parts list, captioned "Sheet index", columns No. / Sheet / Status. Rows are grouped by series, each group opening with a heading row (series letter and name: B Built, C Competed, L Led, W Wrote). The sheet title is the link (one click to the sheet's anchor). A sheet with no page body shows its title unlinked; a row whose sheet has no Status shows a dash. The C-01 row cross-references B-01 the way a drawing set does: its title cell holds "DECA ICDC 2026" and a "See sheet B-01" link.
+- **W-01:** the AP Research row lives in the index, its title cell holding the title, the existing sentence under it in smaller muted type, and the "Research Paper" link straight to the paper.
+- **Contact block:** a small ruled sheet after the index, captioned "Contact": a list of label and link pairs (GitHub; Email, LinkedIn and Resume (PDF) each behind a switch).
+- The fixed left sheet index no longer appears on the cover; the index table replaces it.
+
+### Section pages
+
+- Under the header, a page heading: the series letter and name (for example "B" and "Built") as the `h1`, in the title sheet's type but smaller, with no stamp or revision block.
+- Sheets keep their existing drawing-sheet look. Each shows its sheet number (B-01 and so on) as a small muted label in a ruled box above its heading, and has a readable anchor id (`#lumen`, `#mock-trial`).
+- On wide screens (88rem and up) the fixed left sheet index lists that page's visible sheets, numbered by their sheet numbers instead of 01, 02. `main.js` builds it from the sheets, so it can't drift.
+- **Compact sheet** (the former Also rows, and Oncore's visible part): the same sheet border, marks and grid, but no four-view grid. Heading, the text on solid sheet color, the photo in a plain view frame, and the link where there is one.
+- **Press list** (L-01): a short ruled list captioned "Press", one link per article, link text being the article's headline, "HiLite" and its date. Links only; no HiLite text or photos.
+- **Cross-reference stub** (C-01 on the Competed page): a compact sheet with only its number, heading and the "See sheet B-01" link.
+
 ## Avoid
 
 - Rounded cards with soft shadows, gradients, or glow.
