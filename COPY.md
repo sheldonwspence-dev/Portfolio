@@ -11,7 +11,7 @@ one-sentence summary shown in search results and link previews.
 Constantly consciously curious.
 
 ### now.name
-the startup's name.
+the startup's name, used as the B-07 sheet heading.
 Oncore
 
 ### now.built
@@ -140,9 +140,6 @@ I learned the difficulty that comes with trying to create something that is actu
 what the club has done.
 Created a small community of people I have a lot of pride in.
 
-### club.slides.alt
-description of the slides for screen readers.
-
 ### frc.built
 your role on the team and what you built.
 I built parts of the robot's electrical board and part of the system to track competition statistics. I also did outreach for financing the robot.
@@ -228,7 +225,7 @@ Status
 
 ### now.tb.rev
 the revision or version, like v0 or rev 2.
-v0 in development
+In process
 
 ### lumen.tb.project
 what the project is called in the title block.
@@ -244,7 +241,7 @@ the year or years of the work.
 
 ### lumen.tb.rev
 the revision or version, like v0 or rev 2.
-v1 live
+v1.4 live
 
 ### amerifab.tb.project
 what the project is called in the title block.
@@ -296,7 +293,7 @@ Policy & Civility Club
 
 ### club.tb.role
 your role on this project.
-Founder & President
+Co-founder & Co-president
 
 ### club.tb.year
 the year or years of the work.
@@ -480,8 +477,226 @@ Next revision
 
 ### rev.next1
 first item in the Next revision list.
-Oncore landing page
+Mock trial sheet
 
 ### rev.next2
 second item in the Next revision list.
-Policy & Civility photos
+LunLux sheet
+
+## Rev L: cover and section pages
+
+### series.b
+name of the B series, what Sheldon built (nav, page heading, index group).
+Built
+
+### series.c
+name of the C series, what Sheldon competed in.
+Competed
+
+### series.l
+name of the L series, what Sheldon led.
+Led
+
+### series.w
+name of the W series on the cover index, what Sheldon wrote.
+Wrote
+
+### nav.label
+accessible name for the series nav (screen readers only).
+Primary
+
+### page.title.built
+browser tab title for the Built page.
+Built, Sheldon Spence
+
+### page.title.competed
+browser tab title for the Competed page.
+Competed, Sheldon Spence
+
+### page.title.led
+browser tab title for the Led page.
+Led, Sheldon Spence
+
+### cover.intro
+a few sentences under the tagline introducing Sheldon to a reader who has never met him (hidden while blank).
+
+
+### index.caption
+heading for the sheet index on the cover.
+Sheet index
+
+### index.th.no
+column heading for the sheet number.
+No.
+
+### index.th.sheet
+column heading for the sheet title.
+Sheet
+
+### index.th.status
+column heading for the sheet's status.
+Status
+
+### xref.b01
+cross-reference link from C-01 to sheet B-01.
+See sheet B-01
+
+### deca.name
+C-01 heading and index title.
+DECA ICDC 2026
+
+### lunlux.name
+B-04 heading and index title.
+LunLux
+
+### lunlux.status
+B-04 status in the sheet index.
+Live
+
+### lunlux.url
+URL for the B-04 index link (not visible text).
+https://lunar-landing-hackathon.vercel.app/
+
+### lunlux.built
+what LunLux is and what it does.
+
+
+### lunlux.hard
+the hardest problem.
+
+
+### lunlux.learned
+what it taught you.
+
+
+### lunlux.results
+what came of it.
+
+
+### lunlux.tb.project
+what the project is called in the title block.
+
+
+### lunlux.tb.role
+your role on this project.
+
+
+### lunlux.tb.year
+the year or years of the work.
+
+
+### lunlux.tb.rev
+the status, like v0 or Live.
+
+
+### patent.status
+B-05 status in the sheet index.
+Patent pending
+
+### diamond.name
+B-06 title in the sheet index (no sheet).
+Diamond Challenge
+
+### diamond.status
+B-06 status in the sheet index.
+Coming soon
+
+### mocktrial.name
+C-02 heading and index title.
+Mock Trial
+
+### mocktrial.built
+what you did in mock trial.
+
+
+### mocktrial.hard
+the hardest problem.
+
+
+### mocktrial.learned
+what it taught you.
+
+
+### mocktrial.results
+what came of it.
+
+
+### mocktrial.tb.project
+what the project is called in the title block.
+
+
+### mocktrial.tb.role
+your role on this project.
+
+
+### mocktrial.tb.year
+the year or years of the work.
+
+
+### mocktrial.tb.rev
+the status, like v0 or Live.
+
+
+### kelley.name
+C-03 heading and index title.
+Kelley case competition
+
+### congress.name
+L-03 heading and index title.
+Congress Event Head
+
+### senate.name
+L-04 heading and index title.
+Senate
+
+### econ.name
+L-05 heading and index title.
+Economics Club
+
+### philosophy.name
+L-06 heading and index title.
+Philosophy discussion club
+
+### ap.name
+W-01 title in the sheet index.
+AP Research paper
+
+### press.heading
+heading for the press links on L-01.
+Press
+
+### press.club1
+link text for the HiLite club spotlight: the article's headline, HiLite and its date.
+Club Spotlight: Policy and Civility Club, HiLite, Oct 30, 2026
+
+### contact.heading
+heading for the contact block on the cover.
+Contact
+
+### contact.github.label
+link text for GitHub.
+GitHub
+
+### contact.email.label
+link text for the contact email.
+Email
+
+### contact.email
+the email address made for this site (not visible text; hidden while blank). Never a personal Gmail.
+
+
+### contact.linkedin.label
+link text for LinkedIn.
+LinkedIn
+
+### contact.linkedin.url
+LinkedIn profile URL (not visible text; hidden while blank).
+
+
+### contact.resume.label
+link text for the resume PDF.
+Resume (PDF)
+
+### contact.resume.file
+file name of the resume PDF in assets/ (not visible text; hidden while blank).
+

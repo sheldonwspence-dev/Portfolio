@@ -12,11 +12,11 @@
   <div class="frame">
   <header class="site-header">
     <a class="site-name" href="./" aria-current="page">Sheldon Spence</a>
-    <nav class="site-nav" aria-label="[PLACEHOLDER nav.label: accessible name for the series nav]">
+    <nav class="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="built/">[PLACEHOLDER series.b: name of the B series, what Sheldon built]</a></li>
-        <li><a href="competed/">[PLACEHOLDER series.c: name of the C series, what Sheldon competed in]</a></li>
-        <li><a href="led/">[PLACEHOLDER series.l: name of the L series, what Sheldon led]</a></li>
+        <li><a href="built/">Built</a></li>
+        <li><a href="competed/">Competed</a></li>
+        <li><a href="led/">Led</a></li>
       </ul>
     </nav>
   </header>
@@ -50,6 +50,13 @@
       </thead>
       <tbody>
           <tr>
+            <th scope="row">L</th>
+            <td>Nov 22</td>
+            <td>Cover sheet plus Built, Competed, Led pages</td>
+            <td>Claude</td>
+            <td>Sheldon</td>
+          </tr>
+          <tr>
             <th scope="row">K</th>
             <td>Oct 22</td>
             <td>External links open in a new tab</td>
@@ -77,7 +84,7 @@
             <td>Claude</td>
             <td>Sheldon</td>
           </tr>
-          <tr>
+          <tr hidden>
             <th scope="row">G</th>
             <td>Oct 22</td>
             <td>Revision block and STILL BUILDING stamp</td>
@@ -132,8 +139,8 @@
     <div class="rev-next">
       <p class="rev-next-label">Next revision</p>
       <ul>
-        <li>Oncore landing page</li>
-        <li>Policy &amp; Civility photos</li>
+        <li>Mock trial sheet</li>
+        <li>LunLux sheet</li>
       </ul>
     </div>
   </header>
@@ -141,24 +148,24 @@
 
     <!-- Sheet index: one row per sheet, grouped by series. Status matches each sheet's title block; a dash means the sheet has none. -->
     <section class="card index-sheet" id="index" aria-labelledby="index-title">
-      <h2 id="index-title">[PLACEHOLDER index.caption: heading for the sheet index]</h2>
+      <h2 id="index-title">Sheet index</h2>
       <div class="dimension" aria-hidden="true"></div>
       <table class="parts" aria-labelledby="index-title">
         <thead>
           <tr>
-            <th scope="col">[PLACEHOLDER index.th.no: column heading for the sheet number]</th>
-            <th scope="col">[PLACEHOLDER index.th.sheet: column heading for the sheet title]</th>
-            <th scope="col">[PLACEHOLDER index.th.status: column heading for the sheet's status]</th>
+            <th scope="col">No.</th>
+            <th scope="col">Sheet</th>
+            <th scope="col">Status</th>
           </tr>
         </thead>
         <tbody>
           <tr class="series">
-            <th scope="rowgroup" colspan="3"><span class="series-letter">B</span> [PLACEHOLDER series.b: name of the B series, what Sheldon built]</th>
+            <th scope="rowgroup" colspan="3"><span class="series-letter">B</span> Built</th>
           </tr>
           <tr>
             <td>B-01</td>
             <td><a href="built/#lumen">Lumen</a></td>
-            <td>v1 live</td>
+            <td>v1.4 live</td>
           </tr>
           <tr>
             <td>B-02</td>
@@ -172,48 +179,48 @@
           </tr>
           <tr>
             <td>B-04</td>
-            <td><a href="https://lunar-landing-hackathon.vercel.app/" target="_blank" rel="noopener">[PLACEHOLDER lunlux.name: the project's name as the sheet heading]</a></td>
-            <td>[PLACEHOLDER lunlux.status: LunLux status in the sheet index]</td>
+            <td><a href="https://lunar-landing-hackathon.vercel.app/" target="_blank" rel="noopener">LunLux</a></td>
+            <td>Live</td>
           </tr>
           <tr>
             <td>B-05</td>
             <td>Patent</td>
-            <td>[PLACEHOLDER patent.status: patent status in the sheet index, worded as Sheldon confirms]</td>
+            <td>Patent pending</td>
           </tr>
           <tr>
             <td>B-06</td>
-            <td>[PLACEHOLDER diamond.name: the competition's name in the sheet index]</td>
-            <td>[PLACEHOLDER diamond.status: Diamond Challenge status in the sheet index]</td>
+            <td>Diamond Challenge</td>
+            <td>Coming soon</td>
           </tr>
           <tr>
             <td>B-07</td>
-            <td><a href="built/#oncore">[PLACEHOLDER now.name: the startup's name as the sheet heading]</a></td>
-            <td>v0 in development</td>
+            <td><a href="built/#oncore">Oncore</a></td>
+            <td>In process</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="series">
-            <th scope="rowgroup" colspan="3"><span class="series-letter">C</span> [PLACEHOLDER series.c: name of the C series, what Sheldon competed in]</th>
+            <th scope="rowgroup" colspan="3"><span class="series-letter">C</span> Competed</th>
           </tr>
           <tr>
             <td>C-01</td>
-            <td>[PLACEHOLDER deca.name: the competition's name as the sheet heading] <a href="built/#lumen">[PLACEHOLDER xref.b01: cross-reference link to sheet B-01]</a></td>
+            <td>DECA ICDC 2026 <a href="built/#lumen">See sheet B-01</a></td>
             <td>—</td>
           </tr>
           <tr>
             <td>C-02</td>
-            <td><a href="competed/#mock-trial">[PLACEHOLDER mocktrial.name: the activity's name as the sheet heading]</a></td>
+            <td><a href="competed/#mock-trial">Mock Trial</a></td>
             <td>—</td>
           </tr>
           <tr>
             <td>C-03</td>
-            <td><a href="competed/#kelley">[PLACEHOLDER kelley.name: the competition's name as the sheet heading]</a></td>
+            <td><a href="competed/#kelley">Kelley case competition</a></td>
             <td>—</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="series">
-            <th scope="rowgroup" colspan="3"><span class="series-letter">L</span> [PLACEHOLDER series.l: name of the L series, what Sheldon led]</th>
+            <th scope="rowgroup" colspan="3"><span class="series-letter">L</span> Led</th>
           </tr>
           <tr>
             <td>L-01</td>
@@ -227,32 +234,32 @@
           </tr>
           <tr>
             <td>L-03</td>
-            <td><a href="led/#congress">[PLACEHOLDER congress.name: the role's name as the sheet heading]</a></td>
+            <td><a href="led/#congress">Congress Event Head</a></td>
             <td>—</td>
           </tr>
           <tr>
             <td>L-04</td>
-            <td><a href="led/#senate">[PLACEHOLDER senate.name: the role's name as the sheet heading]</a></td>
+            <td><a href="led/#senate">Senate</a></td>
             <td>—</td>
           </tr>
           <tr>
             <td>L-05</td>
-            <td><a href="led/#econ">[PLACEHOLDER econ.name: the club's name as the sheet heading]</a></td>
+            <td><a href="led/#econ">Economics Club</a></td>
             <td>—</td>
           </tr>
           <tr>
             <td>L-06</td>
-            <td><a href="led/#philosophy">[PLACEHOLDER philosophy.name: the club's name as the sheet heading]</a></td>
+            <td><a href="led/#philosophy">Philosophy discussion club</a></td>
             <td>—</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="series">
-            <th scope="rowgroup" colspan="3"><span class="series-letter">W</span> [PLACEHOLDER series.w: name of the W series, what Sheldon wrote]</th>
+            <th scope="rowgroup" colspan="3"><span class="series-letter">W</span> Wrote</th>
           </tr>
           <tr id="ap-research">
             <td>W-01</td>
-            <td>[PLACEHOLDER ap.name: the paper's title in the sheet index]<p class="row-note">Researcher, junior year: a paper I wrote trying to find the difference in engagement levels during a presentation when you use a positive attitude vs. a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.</p><p class="row-note"><a href="https://docs.google.com/document/d/1nylUMEMGcSc09jxwRU4x8wA5nb8e6XlyRrhuU4Zkens/edit" target="_blank" rel="noopener">Research Paper</a></p></td>
+            <td>AP Research paper<p class="row-note">Researcher, junior year: a paper I wrote trying to find the difference in engagement levels during a presentation when you use a positive attitude vs. a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.</p><p class="row-note"><a href="https://docs.google.com/document/d/1nylUMEMGcSc09jxwRU4x8wA5nb8e6XlyRrhuU4Zkens/edit" target="_blank" rel="noopener">Research Paper</a></p></td>
             <td>—</td>
           </tr>
         </tbody>
@@ -261,16 +268,16 @@
 
     <!-- Contact. Never put a personal Gmail address or a phone number here. -->
     <section class="card contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">[PLACEHOLDER contact.heading: heading for the contact block]</h2>
+      <h2 id="contact-title">Contact</h2>
       <div class="dimension" aria-hidden="true"></div>
       <ul>
-        <li><a href="https://github.com/sheldonwspence-dev" target="_blank" rel="noopener">[PLACEHOLDER contact.github.label: link text for GitHub]</a></li>
+        <li><a href="https://github.com/sheldonwspence-dev" target="_blank" rel="noopener">GitHub</a></li>
         <!-- SWITCH: delete the word "hidden" once the address is in the href. -->
-        <li hidden><a href="mailto:" data-url="contact.email">[PLACEHOLDER contact.email.label: link text for the contact email]</a></li>
+        <li hidden><a href="mailto:" data-url="contact.email">Email</a></li>
         <!-- SWITCH: delete the word "hidden" once the profile URL is in the href. -->
-        <li hidden><a href="#" data-url="contact.linkedin.url" target="_blank" rel="noopener">[PLACEHOLDER contact.linkedin.label: link text for LinkedIn]</a></li>
+        <li hidden><a href="#" data-url="contact.linkedin.url" target="_blank" rel="noopener">LinkedIn</a></li>
         <!-- SWITCH: delete the word "hidden" once the PDF is in assets/ and named in the href. -->
-        <li hidden><a href="#" data-url="contact.resume.file">[PLACEHOLDER contact.resume.label: link text for the resume PDF]</a></li>
+        <li hidden><a href="#" data-url="contact.resume.file">Resume (PDF)</a></li>
       </ul>
     </section>
 
