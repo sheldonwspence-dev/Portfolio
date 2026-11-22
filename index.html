@@ -10,10 +10,21 @@
 </head>
 <body>
   <div class="frame">
-  <nav class="sheet-index"><ol></ol></nav>
+  <header class="site-header">
+    <a class="site-name" href="./" aria-current="page">Sheldon Spence</a>
+    <nav class="site-nav" aria-label="[PLACEHOLDER nav.label: accessible name for the series nav]">
+      <ul>
+        <li><a href="built/">[PLACEHOLDER series.b: name of the B series, what Sheldon built]</a></li>
+        <li><a href="competed/">[PLACEHOLDER series.c: name of the C series, what Sheldon competed in]</a></li>
+        <li><a href="led/">[PLACEHOLDER series.l: name of the L series, what Sheldon led]</a></li>
+      </ul>
+    </nav>
+  </header>
   <header class="titlesheet">
     <h1>Sheldon Spence</h1>
     <p>Constantly consciously curious.</p>
+    <!-- SWITCH: delete the word "hidden" once the intro is written. -->
+    <p class="intro" hidden>[PLACEHOLDER cover.intro: a few sentences introducing Sheldon to a reader who has never met him]</p>
     <!-- The stamp is drawn rough by the #stamp-ink filter below. -->
     <p class="stamp">STILL BUILDING</p>
     <svg class="filter-defs" width="0" height="0" aria-hidden="true" focusable="false">
@@ -128,398 +139,140 @@
   </header>
   <main>
 
-    <!-- 1. Now building -->
-    <article class="card" id="now" aria-labelledby="now-title">
-      <h2 id="now-title">Now building: Oncore</h2>
+    <!-- Sheet index: one row per sheet, grouped by series. Status matches each sheet's title block; a dash means the sheet has none. -->
+    <section class="card index-sheet" id="index" aria-labelledby="index-title">
+      <h2 id="index-title">[PLACEHOLDER index.caption: heading for the sheet index]</h2>
       <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>Full idea planned out; filed a federal trademark application (<a href="https://tsdr.uspto.gov/#caseNumber=50001365&amp;caseType=SERIAL_NO&amp;searchType=statusSearch" target="_blank" rel="noopener noreferrer">U.S. Serial No. 50001365</a>).</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>Pitching and getting the backing (idea-wise) from $1M+ VC partners who tore our idea apart.</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>Differentiation, exit strategy, and an iterative process of learning what is right/wrong make a company thrive.</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>We are just starting a media page, getting the app started, and getting all the paperwork together (waiting for signing), after we have already gotten a trademark filed.</p>
-        </section>
-      </div>
-      <!-- Detail views (see styles.css): up to three callouts each; each note matches a bubble by order. -->
-      <figure class="detail">
-        <div class="detail-view">
-          <img src="assets/now-plan.jpg" width="1457" height="1800" loading="lazy" alt="Whiteboard sketch of Oncore's business plan: a legend of influencers, fans and organizers, money flowing from investors to influencers, and notes on future growth.">
-          <span class="callout" data-bubble="46,5" data-target="30,10"></span>
-          <span class="callout" data-bubble="88,30" data-target="64,22"></span>
-          <span class="callout" data-bubble="56,76" data-target="31,71"></span>
-        </div>
-        <ol class="detail-notes">
-          <li>These are idols or other significant figures that people surround themselves with (Taylor Swift).</li>
-          <li>Hosting spaces where people go to connect with others allows for income from people who want to be more promoted on the site, as well as taking a small percent of donations to the larger fan project.</li>
-          <li>Expanding further into the future.</li>
-        </ol>
-      </figure>
-      <figure class="detail">
-        <div class="detail-view">
-          <img src="assets/now-wireframes.jpg" width="1800" height="1641" loading="lazy" alt="Whiteboard wireframes for the Oncore app: sign-up, a home page with a search bar, artist and fan project pages, app roles, and age rules.">
-          <span class="callout" data-bubble="40,6" data-target="58,11"></span>
-          <span class="callout" data-bubble="20,31" data-target="35,36"></span>
-          <span class="callout" data-bubble="62,83" data-target="40,80"></span>
-        </div>
-        <ol class="detail-notes">
-          <li>Different roles that can be attained in the app depending on the amount of involvement the individual puts into the app.</li>
-          <li>The search page allows for finding specific projects or people.</li>
-          <li>Restrictions on who can be in the app for safety purposes.</li>
-        </ol>
-      </figure>
-      <!-- SWITCH: delete the word "hidden" to show this link once the landing page has a URL. -->
-      <p hidden><a href="#" data-url="now.link.url" target="_blank" rel="noopener">[PLACEHOLDER now.link.text: link text for the startup's landing page]</a></p>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>Oncore</dd></div>
-        <div><dt>Role</dt><dd>Co-founder</dd></div>
-        <div><dt>Years</dt><dd>2026</dd></div>
-        <div><dt>Status</dt><dd>v0 in development</dd></div>
-      </dl>
-    </article>
-
-    <!-- 2. Lumen -->
-    <article class="card" id="lumen" aria-labelledby="lumen-title">
-      <h2 id="lumen-title">Lumen</h2>
-      <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>Lumen is a service helping nonprofits learn how to properly use AI. The specific application transforms what you want into a good prompt. A good prompt gives context, clarity, a role for the AI, and more context (yes, lots of context).</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>The hardest part was making a product good enough to be pitched: technically viable in market, but also clean enough to look marketable. A delicate balance.</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>A good story is the most effective way to both tease out truth and have someone believe in your idea.</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>Against the best sellers in the world, I didn't qualify to even get a test medal (the test is basically a list of buzzwords), but I did get second overall. I got 5th at state and placed 3 spots higher when the competition became international.</p>
-        </section>
-      </div>
-      <figure class="deck">
-        <div class="view-ticks">
-        <div class="deck-frame" id="deck-frame">
-          <iframe id="deck-iframe" src="deck/index.html" width="1200" height="715" loading="lazy"
-                  title="Lumen concept pitch deck from DECA ICDC 2026, nine slides."></iframe>
-        </div>
-        </div>
-        <div class="deck-controls">
-          <button type="button" id="deck-prev" aria-label="Previous slide">&lsaquo;</button>
-          <button type="button" id="deck-next" aria-label="Next slide">&rsaquo;</button>
-        </div>
-        <figcaption>Concept pitch, DECA ICDC 2026</figcaption>
-      </figure>
-      <figure class="photo">
-        <img src="assets/lumen-deca.jpg" width="370" height="480" loading="lazy" alt="A student in a dark suit holds up a DECA trophy on stage while other students wearing medals stand behind.">
-      </figure>
-      <p><a href="https://lumen-theta-ten.vercel.app" target="_blank" rel="noopener">Try Lumen live</a></p>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>Lumen Prompt Optimizer</dd></div>
-        <div><dt>Role</dt><dd>Creator</dd></div>
-        <div><dt>Years</dt><dd>2026</dd></div>
-        <div><dt>Status</dt><dd>v1 live</dd></div>
-      </dl>
-    </article>
-
-    <!-- 3. AmeriFab -->
-    <article class="card" id="amerifab" aria-labelledby="amerifab-title">
-      <h2 id="amerifab-title">AmeriFab</h2>
-      <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>Software that tracked employee job progress and hours.</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>Being able to communicate the value and reality of what I was building to everyone in the organization.</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>Most importantly, the value of proper communication and the future ability AI has to streamline rote processes.</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>Paid for my work and created still-used software to track employee efficiency.</p>
-        </section>
-      </div>
-      <!-- System diagram, drawn inline. Every label is Sheldon's; dashed means planned, not built. -->
-      <figure class="diagram" id="amerifab-diagram">
-        <svg viewBox="0 0 360 500" role="img" aria-label="Diagram of the AmeriFab tracker: people log hours in Asana; Zapier sends them to the ChatGPT API for feedback and into Notion, which logs everything; AWS storage was planned once proof of concept is established.">
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-              <path d="M0 0 L10 5 L0 10 z" class="arrowhead"/>
-            </marker>
-          </defs>
-          <g class="flow">
-            <path d="M180 74 V114" marker-end="url(#arrow)"/>
-            <path d="M180 178 V214 H90 V250" marker-end="url(#arrow)"/>
-            <path d="M180 178 V214 H270 V250" marker-end="url(#arrow)"/>
-            <path d="M270 314 V390" class="planned" marker-end="url(#arrow)"/>
-          </g>
-          <g class="node">
-            <rect x="105" y="10" width="150" height="64"/>
-            <text x="180" y="38" class="name">Asana</text>
-            <text x="180" y="58" class="sub">people log hours</text>
-            <rect x="105" y="114" width="150" height="64"/>
-            <text x="180" y="152" class="name">Zapier</text>
-            <rect x="10" y="250" width="160" height="64"/>
-            <text x="90" y="278" class="name">ChatGPT API</text>
-            <text x="90" y="298" class="sub">gives feedback</text>
-            <rect x="190" y="250" width="160" height="64"/>
-            <text x="270" y="278" class="name">Notion</text>
-            <text x="270" y="298" class="sub">logs everything</text>
-            <rect x="190" y="390" width="160" height="94" class="planned"/>
-            <text x="270" y="418" class="name">AWS</text>
-            <text x="270" y="438" class="sub">storage, once</text>
-            <text x="270" y="456" class="sub">proof of concept</text>
-            <text x="270" y="474" class="sub">is established</text>
-          </g>
-        </svg>
-      </figure>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>Employee job tracker</dd></div>
-        <div><dt>Role</dt><dd>AI Systems Intern</dd></div>
-        <div><dt>Years</dt><dd>2025</dd></div>
-        <div><dt>Status</dt><dd>Still in use</dd></div>
-      </dl>
-    </article>
-
-    <!-- 4. Patent (reserved; no status text until Sheldon confirms the wording) -->
-    <!-- SWITCH: delete the word "hidden" to show this card once the attorney says the wording is ready. -->
-    <article class="card" id="patent" hidden aria-labelledby="patent-title">
-      <h2 id="patent-title">Patent</h2>
-      <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>[PLACEHOLDER patent.built: what the invention is]</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>[PLACEHOLDER patent.hard: the hardest problem]</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>[PLACEHOLDER patent.learned: what the process taught you]</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>[PLACEHOLDER patent.results: current status, worded as Sheldon confirms with the attorney]</p>
-        </section>
-      </div>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>[PLACEHOLDER patent.tb.project: what the project is called in the title block]</dd></div>
-        <div><dt>Role</dt><dd>[PLACEHOLDER patent.tb.role: your role on this project]</dd></div>
-        <div><dt>Years</dt><dd>[PLACEHOLDER patent.tb.year: the year or years of the work]</dd></div>
-        <div><dt>Status</dt><dd>[PLACEHOLDER patent.tb.rev: the revision or version, like v0 or rev 2]</dd></div>
-      </dl>
-    </article>
-
-    <!-- 5. TEDx -->
-    <article class="card" id="tedx" aria-labelledby="tedx-title">
-      <h2 id="tedx-title">TEDx</h2>
-      <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>I helped set up the TEDx event, along with creating the presentation and doing the research for it.</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>Creating the story behind the presentation and creating the presentation.</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>I learned how much effort is put into even hosting a small event.</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>I built a great story and was able to learn more about the value of others.</p>
-        </section>
-      </div>
-      <!-- The talk loads from youtube-nocookie.com only after a click; main.js swaps the button for the player. Slot for the PDF slide viewer below (M2). -->
-      <figure class="video" id="tedx-video">
-        <div class="video-frame">
-          <button type="button" class="video-play" data-video-id="SMjRS8-ZSso" data-title="Sheldon Spence at TEDxCarmelHighSchool">Play the talk</button>
-        </div>
-      </figure>
-      <!-- SWITCH: delete the word "hidden" to show the slides slot (the talk replaces it for now). -->
-      <div class="slot" id="tedx-slides" hidden>[PLACEHOLDER tedx.slides.alt: description of the slides for screen readers]</div>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>TEDxCarmelHighSchool</dd></div>
-        <div><dt>Role</dt><dd>Speaker; leadership team (1 of 3)</dd></div>
-        <div><dt>Years</dt><dd>2025–present</dd></div>
-        <div><dt>Status</dt><dd>Talks published</dd></div>
-      </dl>
-    </article>
-
-    <!-- 6. Policy & Civility Club -->
-    <article class="card" id="club" aria-labelledby="club-title">
-      <h2 id="club-title">Policy &amp; Civility Club</h2>
-      <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>I built the club and the account dedicated to showing the value of working with others: monthly conversations on live bills and rulings, learning to disagree without being disagreeable.</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>Getting people involved in something that initially seemed "pointless."</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>I learned the difficulty that comes with trying to create something that is actually successful.</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>Created a small community of people I have a lot of pride in.</p>
-        </section>
-      </div>
-      <!-- Slot for the PDF slide viewer (M2). -->
-      <!-- SWITCH: delete the word "hidden" to show the slides frame. -->
-      <div class="slot" id="club-slides" hidden>[PLACEHOLDER club.slides.alt: description of the slides for screen readers]</div>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>Policy &amp; Civility Club</dd></div>
-        <div><dt>Role</dt><dd>Founder &amp; President</dd></div>
-        <div><dt>Years</dt><dd>2025–present</dd></div>
-        <div><dt>Status</dt><dd>Meets monthly</dd></div>
-      </dl>
-    </article>
-
-    <!-- 7. FRC 868 -->
-    <article class="card" id="frc" aria-labelledby="frc-title">
-      <h2 id="frc-title">FRC 868</h2>
-      <div class="dimension" aria-hidden="true"></div>
-      <div class="views">
-        <section>
-          <h3>What I built</h3>
-          <p>I built parts of the robot's electrical board and part of the system to track competition statistics. I also did outreach for financing the robot.</p>
-        </section>
-        <section>
-          <h3>The hard part</h3>
-          <p>Having to be the only (official) person to integrate the desires of robot ops and electrical into one succinct system.</p>
-        </section>
-        <section>
-          <h3>What I learned</h3>
-          <p>A lot of people have a lot of opinions about how something should get done, but at the end of the day the most success is found by constant iteration.</p>
-        </section>
-        <section class="results">
-          <h3>Results</h3>
-          <p>We went to the World Championship (I wasn't there; I didn't need to be and had to go to DECA ICDC), where we ended up placing second internationally.</p>
-        </section>
-      </div>
-      <!-- Two silent looping clips. main.js stops them autoplaying for visitors who prefer reduced motion. -->
-      <div class="clips">
-        <div class="clip">
-          <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc1-poster.jpg" aria-label="Starting to design and cut out material for the FRC robot.">
-          <source src="assets/frc1.mp4" type="video/mp4">
-        </video>
-          <button type="button" class="clip-toggle" data-label-pause="Pause clip" data-label-play="Play clip" aria-label="Pause clip"></button>
-        </div>
-        <div class="clip">
-          <video muted loop autoplay playsinline preload="metadata" width="360" height="640" poster="assets/frc2-poster.jpg" aria-label="Silent looping clip: students stand around a machine in the team's shop and watch it work.">
-          <source src="assets/frc2.mp4" type="video/mp4">
-        </video>
-          <button type="button" class="clip-toggle" data-label-pause="Pause clip" data-label-play="Play clip" aria-label="Pause clip"></button>
-        </div>
-      </div>
-      <dl class="titleblock">
-        <div><dt>Project</dt><dd>Team 868, Carmel TechHounds</dd></div>
-        <div><dt>Role</dt><dd>Design, programming, electrical &amp; ops</dd></div>
-        <div><dt>Years</dt><dd>2024–2026</dd></div>
-        <div><dt>Status</dt><dd>World finalist alliance</dd></div>
-      </dl>
-    </article>
-
-    <!-- 8. Also: compact strip, not a full card -->
-    <aside class="also" id="also" aria-labelledby="also-title">
-      <h2 id="also-title">Also</h2>
-      <table class="parts">
+      <table class="parts" aria-labelledby="index-title">
         <thead>
           <tr>
-            <th scope="col">No.</th>
-            <th scope="col">Item</th>
-            <th scope="col">Link</th>
+            <th scope="col">[PLACEHOLDER index.th.no: column heading for the sheet number]</th>
+            <th scope="col">[PLACEHOLDER index.th.sheet: column heading for the sheet title]</th>
+            <th scope="col">[PLACEHOLDER index.th.status: column heading for the sheet's status]</th>
           </tr>
         </thead>
         <tbody>
+          <tr class="series">
+            <th scope="rowgroup" colspan="3"><span class="series-letter">B</span> [PLACEHOLDER series.b: name of the B series, what Sheldon built]</th>
+          </tr>
           <tr>
-            <td>01</td>
-            <td>
-              <p>Congress Event Head: I lead our new extemporaneous-style Congress division (~15–20 competitors), teaching students to debate congressional legislation and the benefits and drawbacks of proposing any one idea. Turnout doubled year over year.</p>
-              <figure class="thumb">
-                <img src="assets/also-congress.jpg" width="616" height="698" loading="lazy" alt="Two group photos of speech and debate students in formal clothes holding trophies on stone steps.">
-              </figure>
-            </td>
+            <td>B-01</td>
+            <td><a href="built/#lumen">Lumen</a></td>
+            <td>v1 live</td>
+          </tr>
+          <tr>
+            <td>B-02</td>
+            <td><a href="built/#amerifab">AmeriFab</a></td>
+            <td>Still in use</td>
+          </tr>
+          <tr>
+            <td>B-03</td>
+            <td><a href="built/#frc">FRC 868</a></td>
+            <td>World finalist alliance</td>
+          </tr>
+          <tr>
+            <td>B-04</td>
+            <td><a href="https://lunar-landing-hackathon.vercel.app/" target="_blank" rel="noopener">[PLACEHOLDER lunlux.name: the project's name as the sheet heading]</a></td>
+            <td>[PLACEHOLDER lunlux.status: LunLux status in the sheet index]</td>
+          </tr>
+          <tr>
+            <td>B-05</td>
+            <td>Patent</td>
+            <td>[PLACEHOLDER patent.status: patent status in the sheet index, worded as Sheldon confirms]</td>
+          </tr>
+          <tr>
+            <td>B-06</td>
+            <td>[PLACEHOLDER diamond.name: the competition's name in the sheet index]</td>
+            <td>[PLACEHOLDER diamond.status: Diamond Challenge status in the sheet index]</td>
+          </tr>
+          <tr>
+            <td>B-07</td>
+            <td><a href="built/#oncore">[PLACEHOLDER now.name: the startup's name as the sheet heading]</a></td>
+            <td>v0 in development</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="series">
+            <th scope="rowgroup" colspan="3"><span class="series-letter">C</span> [PLACEHOLDER series.c: name of the C series, what Sheldon competed in]</th>
+          </tr>
+          <tr>
+            <td>C-01</td>
+            <td>[PLACEHOLDER deca.name: the competition's name as the sheet heading] <a href="built/#lumen">[PLACEHOLDER xref.b01: cross-reference link to sheet B-01]</a></td>
             <td>—</td>
           </tr>
           <tr>
-            <td>02</td>
-            <td>
-              <p>Student government, senator (senior year). We often do events to try and prop up our local community and set up homecoming and other events.</p>
-              <figure class="thumb thumb-tall">
-                <img src="assets/also-senate.jpg" width="800" height="1420" loading="lazy" alt="Photos from an event in a school gym: a student in a blue polo talks with a police officer, and a student sits on a scooter board being pushed between cones.">
-              </figure>
-            </td>
-            <td><a href="https://www.instagram.com/p/Dcq23Q2S3dY/" target="_blank" rel="noopener">Blood drive post</a></td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Researcher, junior year: a paper I wrote trying to find the difference in engagement levels during a presentation when you use a positive attitude vs. a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.</td>
-            <td><a href="https://docs.google.com/document/d/1nylUMEMGcSc09jxwRU4x8wA5nb8e6XlyRrhuU4Zkens/edit" target="_blank" rel="noopener">Research Paper</a></td>
-          </tr>
-          <tr>
-            <td>04</td>
-            <td>
-              <p>I've worked on multiple business pitching competitions. Here is an example of one such competition's material.</p>
-              <figure class="thumb">
-                <img src="assets/kelley-drawing.jpg" width="1386" height="1066" loading="lazy" alt="Engineering drawing for Oolitic Goods: a child's crayon drawing of the Indiana University campus prepared as a laser-engraving template for a limestone coaster, with dimensions, numbered callouts, notes and a title block.">
-              </figure>
-            </td>
+            <td>C-02</td>
+            <td><a href="competed/#mock-trial">[PLACEHOLDER mocktrial.name: the activity's name as the sheet heading]</a></td>
             <td>—</td>
           </tr>
           <tr>
-            <td>05</td>
-            <td>Founded a biweekly philosophy discussion club, launched fall 2026.</td>
+            <td>C-03</td>
+            <td><a href="competed/#kelley">[PLACEHOLDER kelley.name: the competition's name as the sheet heading]</a></td>
+            <td>—</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="series">
+            <th scope="rowgroup" colspan="3"><span class="series-letter">L</span> [PLACEHOLDER series.l: name of the L series, what Sheldon led]</th>
+          </tr>
+          <tr>
+            <td>L-01</td>
+            <td><a href="led/#club">Policy &amp; Civility Club</a></td>
+            <td>Meets monthly</td>
+          </tr>
+          <tr>
+            <td>L-02</td>
+            <td><a href="led/#tedx">TEDx</a></td>
+            <td>Talks published</td>
+          </tr>
+          <tr>
+            <td>L-03</td>
+            <td><a href="led/#congress">[PLACEHOLDER congress.name: the role's name as the sheet heading]</a></td>
             <td>—</td>
           </tr>
           <tr>
-            <td>06</td>
-            <td>
-              <p>Witness Officer: prep &amp; coach every witness. Indiana's only team at Nationals; only member to play two witness roles there, and both earned National Outstanding Witness.</p>
-              <figure class="thumb">
-                <img src="assets/also-mocktrial.jpg" width="1600" height="1200" loading="lazy" alt="A group of students in formal clothes pose with a large trophy and a banner reading &quot;2026 State Champion&quot;.">
-              </figure>
-            </td>
+            <td>L-04</td>
+            <td><a href="led/#senate">[PLACEHOLDER senate.name: the role's name as the sheet heading]</a></td>
             <td>—</td>
           </tr>
           <tr>
-            <td>07</td>
-            <td>
-              <p>Vice President: run member tracking &amp; organization for a 36-time state-champion National Economics Challenge program (2025 national finalists).</p>
-              <figure class="thumb">
-                <img src="assets/also-econ.jpg" width="1600" height="1200" loading="lazy" alt="Four students in black T-shirts reading &quot;I heart Macro&quot; stand in a row in a classroom with a woman in a blue T-shirt.">
-              </figure>
-            </td>
+            <td>L-05</td>
+            <td><a href="led/#econ">[PLACEHOLDER econ.name: the club's name as the sheet heading]</a></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>L-06</td>
+            <td><a href="led/#philosophy">[PLACEHOLDER philosophy.name: the club's name as the sheet heading]</a></td>
+            <td>—</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="series">
+            <th scope="rowgroup" colspan="3"><span class="series-letter">W</span> [PLACEHOLDER series.w: name of the W series, what Sheldon wrote]</th>
+          </tr>
+          <tr id="ap-research">
+            <td>W-01</td>
+            <td>[PLACEHOLDER ap.name: the paper's title in the sheet index]<p class="row-note">Researcher, junior year: a paper I wrote trying to find the difference in engagement levels during a presentation when you use a positive attitude vs. a material reward. I found that rewards had an overall larger negative impact on engagement compared to attitudes' positive impact.</p><p class="row-note"><a href="https://docs.google.com/document/d/1nylUMEMGcSc09jxwRU4x8wA5nb8e6XlyRrhuU4Zkens/edit" target="_blank" rel="noopener">Research Paper</a></p></td>
             <td>—</td>
           </tr>
         </tbody>
       </table>
-    </aside>
+    </section>
+
+    <!-- Contact. Never put a personal Gmail address or a phone number here. -->
+    <section class="card contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">[PLACEHOLDER contact.heading: heading for the contact block]</h2>
+      <div class="dimension" aria-hidden="true"></div>
+      <ul>
+        <li><a href="https://github.com/sheldonwspence-dev" target="_blank" rel="noopener">[PLACEHOLDER contact.github.label: link text for GitHub]</a></li>
+        <!-- SWITCH: delete the word "hidden" once the address is in the href. -->
+        <li hidden><a href="mailto:" data-url="contact.email">[PLACEHOLDER contact.email.label: link text for the contact email]</a></li>
+        <!-- SWITCH: delete the word "hidden" once the profile URL is in the href. -->
+        <li hidden><a href="#" data-url="contact.linkedin.url" target="_blank" rel="noopener">[PLACEHOLDER contact.linkedin.label: link text for LinkedIn]</a></li>
+        <!-- SWITCH: delete the word "hidden" once the PDF is in assets/ and named in the href. -->
+        <li hidden><a href="#" data-url="contact.resume.file">[PLACEHOLDER contact.resume.label: link text for the resume PDF]</a></li>
+      </ul>
+    </section>
 
   </main>
   </div>

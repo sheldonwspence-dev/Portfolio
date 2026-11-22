@@ -159,13 +159,11 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
-    counter-reset: sheet;
     font-variant-numeric: tabular-nums;
     font-size: var(--step--1);
     line-height: 1.3;
   }
   .sheet-index li {
-    counter-increment: sheet;
     display: flex;
     gap: 0.5rem;
     padding: 0.35rem 0.5rem;
@@ -174,8 +172,7 @@ main {
     border-top-width: 0;
   }
   .sheet-index li:first-child { border-top-width: 1px; }
-  .sheet-index li::before {
-    content: counter(sheet, decimal-leading-zero);
+  .sheet-index-no {
     flex: none;
     color: var(--ink-muted);
   }
@@ -318,6 +315,8 @@ h2 {
 .views { display: grid; gap: 1.35rem; }
 @media (min-width: 48rem) {
   .views { grid-template-columns: 1fr 1fr; gap: 1.65rem; }
+  /* With any view switched off (compact Oncore), the rest run full width instead of leaving a gap. */
+  .views:has(> section[hidden]) { grid-template-columns: 1fr; }
 }
 .views section {
   position: relative;
@@ -548,8 +547,7 @@ figcaption { margin-top: 0.5rem; color: var(--ink-muted); font-size: var(--step-
 .detail-notes li { display: flex; gap: 0.75rem; align-items: start; counter-increment: note; }
 .detail-notes li::before { content: counter(note); flex: none; }
 
-/* The Also strip is a parts list: a ruled table, not a card */
-.also h2 { margin-bottom: 0.75rem; font-size: var(--step-1); }
+/* Ruled parts-list table, used for the sheet index on the cover */
 .parts {
   width: 100%;
   border-collapse: collapse;
@@ -565,8 +563,63 @@ figcaption { margin-top: 0.5rem; color: var(--ink-muted); font-size: var(--step-
   border-bottom: 1px solid var(--construction);
 }
 .parts thead th { border-bottom: 1px solid var(--ink); font-weight: 600; }
-.parts figure { margin: 0.75rem 0 0; max-width: 22rem; border: 1px solid var(--ink); }
-.parts figure img { display: block; width: 100%; height: auto; }
-.parts figure.thumb-tall { max-width: 12rem; }
-.parts tbody tr:last-child td { border-bottom: 0; }
-.parts td:first-child, .parts th:first-child { width: 5rem; }
+.parts tbody:last-child tr:last-child td { border-bottom: 0; }
+.parts td:first-child, .parts th:first-child { width: 5rem; white-space: nowrap; }
+/* Series heading rows group the index: B Built, C Competed and so on */
+.parts .series th {
+  padding-top: 1rem;
+  border-bottom: 1px solid var(--ink);
+  font-size: var(--step-1);
+  font-weight: 600;
+}
+.parts tbody:first-of-type .series th { padding-top: 0.5rem; }
+.parts .row-note { margin-top: 0.35rem; font-size: var(--step--1); color: var(--ink-muted); }
+.parts .row-note a { color: var(--ink); }
+
+/* Shared header on every page: the name back to the cover, and the series nav */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--font-head);
+  font-size: var(--step-1);
+  font-weight: 600;
+}
+.site-name { font-weight: 700; text-decoration: none; }
+.site-name:hover { text-decoration: underline; }
+.site-nav ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+.site-nav a[aria-current="page"] { text-decoration-thickness: 2px; }
+
+/* Section page heading: the title sheet's type, smaller, with no stamp or revision block */
+.section-head h1 { margin: 0; padding: 0; border: 0; font-size: var(--step-3); }
+@media (min-width: 48rem) {
+  .section-head h1 { font-size: var(--step-4); }
+}
+.series-letter { color: var(--ink-muted); }
+.titlesheet .intro { margin-top: 0.75rem; font-size: var(--step-0); color: var(--ink); }
+
+/* Sheet number above each sheet's heading, in a small ruled box */
+.card > .sheet-no {
+  margin: 0;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--ink);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+/* Leave room so a sheet's heading isn't hidden under the top edge when linked directly */
+.card { scroll-margin-top: 1.5rem; }
+
+/* Compact sheets (former Also rows): no view grid, just text, photo and link */
+.photo-tall img { max-width: 12rem; }
+
+/* Press list on L-01 and the contact list on the cover: plain ruled lists */
+.press { background: var(--sheet); padding: 0.5rem; border-top: 1px solid var(--ink); }
+.press ul, .contact ul { margin: 0; padding: 0; list-style: none; }
+.press li, .contact li { padding: 0.35rem 0; border-bottom: 1px solid var(--construction); }
+.press li:last-child, .contact li:last-child { border-bottom: 0; }
+.contact ul { width: fit-content; min-width: min(100%, 16rem); padding: 0.25rem 0.75rem; background: var(--sheet); }

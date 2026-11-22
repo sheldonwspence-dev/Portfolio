@@ -1,21 +1,25 @@
+// One script for every page: each part below only runs if its elements are on the page.
+
 // Scale the deck iframe from its native size down to the width of its card.
 const frame = document.getElementById('deck-frame');
 const deck = document.getElementById('deck-iframe');
 const NATIVE_WIDTH = 1200;
 
-function fitDeck() {
-  deck.style.transform = `scale(${frame.clientWidth / NATIVE_WIDTH})`;
-}
-new ResizeObserver(fitDeck).observe(frame);
+if (frame && deck) {
+  const fitDeck = () => {
+    deck.style.transform = `scale(${frame.clientWidth / NATIVE_WIDTH})`;
+  };
+  new ResizeObserver(fitDeck).observe(frame);
 
-// The deck's own nav is tiny once scaled, so these buttons click it for the visitor.
-// This works because the deck is served from the same origin as the page.
-function deckClick(id) {
-  const button = deck.contentDocument && deck.contentDocument.getElementById(id);
-  if (button) button.click();
+  // The deck's own nav is tiny once scaled, so these buttons click it for the visitor.
+  // This works because the deck is served from the same origin as the page.
+  const deckClick = (id) => {
+    const button = deck.contentDocument && deck.contentDocument.getElementById(id);
+    if (button) button.click();
+  };
+  document.getElementById('deck-prev').addEventListener('click', () => deckClick('prev-btn'));
+  document.getElementById('deck-next').addEventListener('click', () => deckClick('next-btn'));
 }
-document.getElementById('deck-prev').addEventListener('click', () => deckClick('prev-btn'));
-document.getElementById('deck-next').addEventListener('click', () => deckClick('next-btn'));
 
 // Revision clouds: a scalloped red outline around each card's Results section.
 // Each one is seeded from its card's id, so it looks hand-drawn but is the same on every redraw.
@@ -62,7 +66,7 @@ function cloudPath(w, h, random) {
   return d;
 }
 
-document.querySelectorAll('.card:not([hidden]) .results').forEach(section => {
+document.querySelectorAll('.card:not([hidden]) .views:not([hidden]) .results:not([hidden])').forEach(section => {
   const svg = document.createElementNS(SVG_NS, 'svg');
   const path = document.createElementNS(SVG_NS, 'path');
   svg.classList.add('cloud');
@@ -135,16 +139,21 @@ document.querySelectorAll('.detail-view').forEach(view => {
   view.prepend(leaders);
 });
 
-// Sheet index: one link per card, using each card's own title. CSS numbers the list and hides it on phones.
+// Sheet index on section pages: one link per visible sheet, using its own number and title. CSS hides it on phones.
 const sheetList = document.querySelector('.sheet-index ol');
-document.querySelectorAll('main .card:not([hidden])').forEach((card) => {
-  const link = document.createElement('a');
-  link.href = `#${card.id}`;
-  link.textContent = card.querySelector('h2').textContent;
-  const item = document.createElement('li');
-  item.append(link);
-  sheetList.append(item);
-});
+if (sheetList) {
+  document.querySelectorAll('main .card:not([hidden])').forEach((card) => {
+    const number = document.createElement('span');
+    number.className = 'sheet-index-no';
+    number.textContent = card.querySelector('.sheet-no').textContent;
+    const link = document.createElement('a');
+    link.href = `#${card.id}`;
+    link.textContent = card.querySelector('h2').textContent;
+    const item = document.createElement('li');
+    item.append(number, link);
+    sheetList.append(item);
+  });
+}
 
 // TEDx talk: nothing from YouTube loads until the visitor clicks. The privacy-enhanced domain sets no cookies until playback.
 document.querySelectorAll('.video-play').forEach((button) => {
